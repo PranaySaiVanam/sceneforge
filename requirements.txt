@@ -1,0 +1,5 @@
+# Core pipeline needs only pydantic; LLM calls use the Python standard library.
+pydantic>=2.6
+# Production server
+fastapi>=0.110
+uvicorn[standard]>=0.27

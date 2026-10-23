@@ -1,0 +1,90 @@
+query	acceptable
+walks across the room	walk,walk_happy
+strolls to the door	walk,walk_happy
+walks slowly, head down	walk_sad,walk
+runs for his life	run,run_start
+sprints toward the exit	run,run_start
+jogs over	run,run_start,run_stop
+backs away nervously	walk_back
+retreats step by step	walk_back
+circles his opponent	walk_side,boxing
+sidesteps to the left	walk_side
+sneaks past the guard	sneak
+creeps toward the door	sneak
+tiptoes across the floor	sneak
+limps on an injured leg	walk_limp
+staggers like he is drunk	walk_drunk
+shambles like a zombie	walk_zombie
+paces nervously	pace
+throws a punch	punch,punch_kick,boxing
+lunges at him	punch,punch_kick
+kicks the door	kick,punch_kick
+spars like a boxer	boxing
+puts his fists up	boxing,punch
+fights with a sword	sword
+does a spinning kick	spin_kick
+dodges the blow	duck
+ducks under the swing	duck
+falls flat on his face	fall_face
+collapses to the ground	fall_face,fall_back
+slips and falls backwards	fall_back
+gets back up	get_up
+does a cartwheel	cartwheel
+flips backwards	backflip
+jumps over the gap	jump,jump_twist
+leaps forward	jump
+hops on one foot	hop
+waves hello	wave
+waves goodbye	wave
+gives him a high five	high_five
+shakes hands	handshake
+shrugs	shrug
+takes a bow	curtsey
+cries quietly	mope
+sulks	mope
+laughs at the joke	laugh
+argues angrily	angry
+shouts at him	angry
+plays peekaboo	peekaboo
+sits down on a chair	sit,sit_stool
+perches on a stool	sit_stool
+picks up the box	pick_up
+throws the ball	throw
+pushes the heavy crate	push
+climbs the ladder	climb
+sweeps the floor	sweep
+stretches and yawns	stretch
+dances salsa	salsa
+does a silly chicken dance	chicken_dance
+pirouettes gracefully	ballet
+crawls on hands and knees	crawl
+searches the room with a flashlight	flashlight
+looks around	flashlight
+drinks from a bottle	drink
+stands and waits	idle_wait,idle_breathe
+stops	idle_wait,idle_breathe
+stands still	idle_wait,idle_breathe
+celebrates the win	jump_twist,high_five
+eats dinner with a fork	eat_dinner,eat_casual
+eats a plate of rice	eat_dinner,eat_casual
+eats soup with a spoon	eat_soup
+bites into a sandwich	eat_sandwich
+chops onions	chop
+dices the vegetables	chop
+stirs the pot	mix
+whisks the eggs	mix
+kneads the dough	knead
+slices the bread	slice,carve
+carves the meat	carve,slice
+makes a cup of tea	make_coffee
+sips hot chai	sip_coffee
+sets the table	set_glass
+answers his phone	phone_call
+types an email on a laptop	typing
+brushes her teeth	brush_teeth
+does pushups	pushups
+drops and gives me twenty push ups	pushups
+does jumping jacks	jumping_jacks
+does squats	squats
+lifts weights at the gym	weights
+warms up before the run	warm_up,stretch

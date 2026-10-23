@@ -1,0 +1,15 @@
+# One-click deploy on Render: New > Blueprint > pick this repository.
+services:
+  - type: web
+    name: sceneforge
+    runtime: python
+    plan: free
+    buildCommand: pip install pydantic
+    startCommand: python devserver.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      # Optional: set one of these in the Render dashboard to enable an LLM Director.
+      - key: GEMINI_API_KEY
+        sync: false

@@ -1,0 +1,3 @@
+-r requirements.txt
+numpy>=1.26      # tools/build_motion_library.py
+pytest>=8

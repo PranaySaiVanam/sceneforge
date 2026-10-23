@@ -1,0 +1,74 @@
+id	cmu	category	tags	description	trim
+idle_wait	141_20	idle	idle,wait,stand,stand still,standing,waiting,pause,neutral,stop,stops,halt,freeze,catch breath	stands in place waiting, shifting weight	
+idle_breathe	140_06	idle	idle,stand,breathe,rest,calm,neutral,still	relaxed idle stance	
+walk	143_32	locomotion	walk,walking,stroll,approach,go,move,step,forward,enter	normal walk forward	
+walk_back	143_39	locomotion	walk backwards,back away,retreat,backward,step back	walks backwards, backing away	
+walk_side	143_40	locomotion	walk sideways,sidestep,circle,strafe,side step	walks sideways, side-stepping	
+sneak	120_09	locomotion	sneak,sneaking,creep,tiptoe,stealth,stealthy,quiet,spy	sneaks forward stealthily	
+walk_sad	91_13	locomotion	sad walk,depressed,slow,tired,dejected,trudge,sorrow	slow sad walk with slumped posture	
+walk_happy	82_12	locomotion	happy walk,cheerful,bouncy,carefree,joyful,stroll	happy carefree bouncy walk	
+walk_zombie	104_41	locomotion	zombie,undead,shamble,monster,creepy,stagger	zombie shambling walk	
+walk_limp	77_19	locomotion	limp,limping,injured,hurt,wounded,hobble	limping on an injured right leg	
+walk_drunk	91_09	locomotion	drunk,stagger,stumble,wobble,dizzy	staggering drunk walk	
+pace	143_29	locomotion	pace,pacing,nervous,anxious,worried,thinking	pacing back and forth	
+run	143_01	locomotion	run,running,sprint,dash,rush,charge,flee,chase,hurry	running fast	
+run_stop	143_02	locomotion	run then brake,skid,arrive running,run to a standstill	runs, then brakes to a standstill	
+run_start	143_03	locomotion	start to run,take off,burst,startled run,flee	starts from standing into a run	
+jump	143_05	action	jump,leap,jumping,bound,long jump	jumps forward for distance	
+jump_twist	143_08	action	jump twist,spin jump,twist,celebrate,cheer,victory jump	jumps with a twist in the air	
+hop	143_31	action	hop,hopscotch,skip,playful,child,game	hopscotch hopping	
+punch	143_23	combat	punch,punching,strike,hit,attack,jab,lunge,fight,fist	throws punches	
+kick	143_24	combat	kick,kicking,strike,attack,fight,front kick	kicks	
+punch_kick	141_14	combat	punch and kick,combo,fight,brawl,attack,martial arts	punch and kick combination	
+boxing	13_17	combat	boxing,boxer,guard,spar,sparring,fight,fists up,circle,duel	boxing stance, sparring and jabbing	
+sword	02_07	combat	sword,swordplay,fencing,duel,slash,blade,stab	swordplay attacks	
+spin_kick	88_06	combat	spin kick,jump kick,acrobatic,martial arts,roundhouse	jumping spin kick	
+fall_face	90_16	reaction	fall,falls,fall down,collapse,knocked down,trip,faint,die,defeated,dodge and fall	falls forward onto the face	1.9:
+fall_back	90_18	reaction	fall back,slip,rug pull,knocked back,fall over,blown back	feet pulled out, falls backwards	
+get_up	140_08	reaction	get up,stand up,rise,recover,get back up,from ground	gets up from lying on the back	0.6:
+cartwheel	144_01	acrobatic	cartwheel,acrobatic,gymnastics,tumble,flip,show off	cartwheels	
+backflip	88_01	acrobatic	backflip,flip,acrobatic,stunt,somersault	backflip	
+wave	143_25	social	wave,waving,hello,greet,goodbye,hi,signal,call	waves hello	
+high_five	141_22	social	high five,celebrate,team,congratulate,victory	gives a high five	
+handshake	141_23	social	shake hands,handshake,greet,meet,deal,agree,introduce	shakes hands	
+shrug	141_21	social	shrug,dunno,confused,unsure,whatever,indifferent	shrugs shoulders	
+curtsey	141_26	social	curtsey,bow,polite,respect,thank,greet formally	curtsey bow	
+mope	141_27	emotion	mope,sad,upset,sulk,disappointed,grief,despair	mopes sadly	
+laugh	13_14	emotion	laugh,laughing,happy,joke,amused,giggle	laughs	
+angry	18_10	emotion	angry,argue,quarrel,shout,furious,gesture,yell,frustrated	angry hand gestures, arguing	
+peekaboo	143_33	emotion	peek a boo,playful,hide,surprise,child	plays peek-a-boo	
+sit	143_18	pose	sit,sit down,seat,chair,rest,get up,sit and stand	sits down and gets back up	1.4:4.8
+sit_stool	141_17	pose	sit on stool,sit,perch,stool,bar,wait seated	sits on a stool	
+pick_up	143_11	work	pick up,lift,carry,box,grab,collect,take	walks over and picks up a box	1.6:
+throw	143_20	work	throw,toss,catch,pass,hurl,ball	catches and throws	
+push	81_06	work	push,shove,heavy,force,move object,press	pushes a heavy box	
+climb	143_37	work	climb,ladder,climb up,ascend,descend	climbs up and down a ladder	
+sweep	143_28	work	sweep,broom,clean,chore,janitor	sweeps with a push broom	
+stretch	143_30	work	stretch,yawn,wake up,tired,sleepy,warm up	stretches and yawns	
+salsa	60_01	dance	salsa,dance,dancing,party,latin,partner dance	salsa dancing	
+chicken_dance	143_34	dance	chicken dance,dance,silly,funny,party,celebrate	does the chicken dance	
+ballet	05_02	dance	ballet,pirouette,graceful,elegant,dance,spin	expressive ballet with a pirouette	
+crawl	111_03	pose	crawl,crawling,hands and knees,baby,creep low,wounded crawl	crawls on hands and knees	1.4:
+duck	139_09	reaction	duck,dodge,evade,avoid,crouch,cover,flinch	ducks to dodge	1.3:4.4
+flashlight	77_05	action	look around,search,flashlight,investigate,scan,explore,examine	looks around searching with a flashlight	
+drink	80_40	action	drink,drinking,bottle,thirsty,sip	drinks from a bottle	
+eat_dinner	79_12	daily	eat,eats,eating,dinner,lunch,meal,plate,fork,knife,dine,food,breakfast	eats a meal from a plate with a fork and knife	
+eat_soup	79_42	daily	soup,bowl,spoon,eat soup,slurp,broth	eats soup from a bowl with a spoon	
+eat_sandwich	79_15	daily	sandwich,burger,bite,snack,eat with hands,roti,dosa,pizza	eats a sandwich with both hands	
+chop	79_10	daily	chop,chopping,cut,cutting,onion,vegetables,knife,dice,cook,prep	chops onions on a cutting board	
+slice	79_09	daily	slice,slicing,bread,loaf,cut bread,carve	slices a loaf of bread	
+mix	79_13	daily	mix,mixing,stir,stirring,whisk,batter,bowl,cook,cooking,beat eggs	mixes batter in a bowl	
+knead	79_14	daily	knead,kneading,dough,bake,baking,roll,flour,chapati	kneads and works dough	
+make_coffee	80_31	daily	make coffee,brew,coffee,tea,kettle,pour,prepare drink,cook	makes a cup of coffee	
+sip_coffee	79_41	daily	sip,coffee,tea,cup,mug,chai,hot drink	sips coffee from a cup	
+set_glass	80_27	daily	set the table,place,glass,put down,serve,lay the table	sets a glass of water down on the table	
+eat_casual	80_24	daily	eat,eating,munch,chew,snack,food	eats casually	
+carve	80_32	daily	slice,slicing,carve,carving,meat,cut,cook	slices food with a knife	
+phone_call	79_36	daily	phone,call,answer the phone,ring,talk on phone,mobile	answers the phone	
+typing	79_85	daily	type,typing,laptop,computer,work,keyboard,email	types on a laptop	
+brush_teeth	79_81	daily	brush teeth,toothbrush,morning routine,bathroom	brushes teeth	
+jumping_jacks	22_16	exercise	jumping jacks,star jumps,workout,exercise,warm up,cardio,pt	does jumping jacks	
+squats	22_14	exercise	squat,squats,workout,exercise,leg day,deep knee bend,sit ups	does squats	
+weights	79_93	exercise	lift weights,weight lifting,dumbbell,barbell,gym,lift,curl,bench	lifts weights	
+warm_up	77_21	exercise	stretch,stretching,warm up,cool down,limber up,exercise	stretches to warm up	
+pushups	keyframed:pushups	exercise	pushup,pushups,push up,push ups,press up,press ups,push-ups,workout,exercise,gym,drop and give me	gets down and does five pushups, then stands up	

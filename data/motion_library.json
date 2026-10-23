@@ -1,0 +1,1912 @@
+{
+ "fps": 30,
+ "joints": [
+  "Hips",
+  "LeftUpLeg",
+  "LeftLeg",
+  "LeftFoot",
+  "LeftToeBase",
+  "RightUpLeg",
+  "RightLeg",
+  "RightFoot",
+  "RightToeBase",
+  "Spine",
+  "Spine1",
+  "Neck1",
+  "Head",
+  "Head_End",
+  "LeftArm",
+  "LeftForeArm",
+  "LeftHand",
+  "RightArm",
+  "RightForeArm",
+  "RightHand"
+ ],
+ "bones": [
+  [
+   0,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   2,
+   3
+  ],
+  [
+   3,
+   4
+  ],
+  [
+   0,
+   5
+  ],
+  [
+   5,
+   6
+  ],
+  [
+   6,
+   7
+  ],
+  [
+   7,
+   8
+  ],
+  [
+   0,
+   9
+  ],
+  [
+   9,
+   10
+  ],
+  [
+   10,
+   11
+  ],
+  [
+   11,
+   12
+  ],
+  [
+   12,
+   13
+  ],
+  [
+   10,
+   14
+  ],
+  [
+   14,
+   15
+  ],
+  [
+   15,
+   16
+  ],
+  [
+   10,
+   17
+  ],
+  [
+   17,
+   18
+  ],
+  [
+   18,
+   19
+  ]
+ ],
+ "source": "CMU Graphics Lab Motion Capture Database (mocap.cs.cmu.edu), BVH conversion by B. Hahne",
+ "clips": [
+  {
+   "id": "idle_wait",
+   "cmu": "141_20",
+   "category": "idle",
+   "tags": [
+    "idle",
+    "wait",
+    "stand",
+    "stand still",
+    "standing",
+    "waiting",
+    "pause",
+    "neutral",
+    "stop",
+    "stops",
+    "halt",
+    "freeze",
+    "catch breath"
+   ],
+   "description": "stands in place waiting, shifting weight",
+   "frames": 180,
+   "duration": 5.967,
+   "end_disp": [
+    -0.405,
+    0.958
+   ],
+   "end_yaw": 1.058,
+   "avg_speed": 0.174,
+   "height": 1.793,
+   "source": "mocap"
+  },
+  {
+   "id": "idle_breathe",
+   "cmu": "140_06",
+   "category": "idle",
+   "tags": [
+    "idle",
+    "stand",
+    "breathe",
+    "rest",
+    "calm",
+    "neutral",
+    "still"
+   ],
+   "description": "relaxed idle stance",
+   "frames": 180,
+   "duration": 5.967,
+   "end_disp": [
+    0.221,
+    0.256
+   ],
+   "end_yaw": -0.168,
+   "avg_speed": 0.057,
+   "height": 1.635,
+   "source": "mocap"
+  },
+  {
+   "id": "walk",
+   "cmu": "143_32",
+   "category": "locomotion",
+   "tags": [
+    "walk",
+    "walking",
+    "stroll",
+    "approach",
+    "go",
+    "move",
+    "step",
+    "forward",
+    "enter"
+   ],
+   "description": "normal walk forward",
+   "frames": 68,
+   "duration": 2.233,
+   "end_disp": [
+    -0.199,
+    3.154
+   ],
+   "end_yaw": -0.049,
+   "avg_speed": 1.415,
+   "height": 1.686,
+   "source": "mocap"
+  },
+  {
+   "id": "walk_back",
+   "cmu": "143_39",
+   "category": "locomotion",
+   "tags": [
+    "walk backwards",
+    "back away",
+    "retreat",
+    "backward",
+    "step back"
+   ],
+   "description": "walks backwards, backing away",
+   "frames": 74,
+   "duration": 2.433,
+   "end_disp": [
+    -0.194,
+    -2.259
+   ],
+   "end_yaw": 0.001,
+   "avg_speed": 0.932,
+   "height": 1.685,
+   "source": "mocap"
+  },
+  {
+   "id": "walk_side",
+   "cmu": "143_40",
+   "category": "locomotion",
+   "tags": [
+    "walk sideways",
+    "sidestep",
+    "circle",
+    "strafe",
+    "side step"
+   ],
+   "description": "walks sideways, side-stepping",
+   "frames": 82,
+   "duration": 2.7,
+   "end_disp": [
+    2.246,
+    -1.097
+   ],
+   "end_yaw": 0.009,
+   "avg_speed": 0.926,
+   "height": 1.624,
+   "source": "mocap"
+  },
+  {
+   "id": "sneak",
+   "cmu": "120_09",
+   "category": "locomotion",
+   "tags": [
+    "sneak",
+    "sneaking",
+    "creep",
+    "tiptoe",
+    "stealth",
+    "stealthy",
+    "quiet",
+    "spy"
+   ],
+   "description": "sneaks forward stealthily",
+   "frames": 76,
+   "duration": 2.5,
+   "end_disp": [
+    0.062,
+    1.922
+   ],
+   "end_yaw": -0.044,
+   "avg_speed": 0.769,
+   "height": 1.672,
+   "source": "mocap"
+  },
+  {
+   "id": "walk_sad",
+   "cmu": "91_13",
+   "category": "locomotion",
+   "tags": [
+    "sad walk",
+    "depressed",
+    "slow",
+    "tired",
+    "dejected",
+    "trudge",
+    "sorrow"
+   ],
+   "description": "slow sad walk with slumped posture",
+   "frames": 58,
+   "duration": 1.9,
+   "end_disp": [
+    0.006,
+    1.444
+   ],
+   "end_yaw": 0.015,
+   "avg_speed": 0.76,
+   "height": 1.637,
+   "source": "mocap"
+  },
+  {
+   "id": "walk_happy",
+   "cmu": "82_12",
+   "category": "locomotion",
+   "tags": [
+    "happy walk",
+    "cheerful",
+    "bouncy",
+    "carefree",
+    "joyful",
+    "stroll"
+   ],
+   "description": "happy carefree bouncy walk",
+   "frames": 64,
+   "duration": 2.1,
+   "end_disp": [
+    0.01,
+    3.781
+   ],
+   "end_yaw": 0.114,
+   "avg_speed": 1.801,
+   "height": 1.782,
+   "source": "mocap"
+  },
+  {
+   "id": "walk_zombie",
+   "cmu": "104_41",
+   "category": "locomotion",
+   "tags": [
+    "zombie",
+    "undead",
+    "shamble",
+    "monster",
+    "creepy",
+    "stagger"
+   ],
+   "description": "zombie shambling walk",
+   "frames": 48,
+   "duration": 1.567,
+   "end_disp": [
+    0.272,
+    1.076
+   ],
+   "end_yaw": -0.029,
+   "avg_speed": 0.709,
+   "height": 1.921,
+   "source": "mocap"
+  },
+  {
+   "id": "walk_limp",
+   "cmu": "77_19",
+   "category": "locomotion",
+   "tags": [
+    "limp",
+    "limping",
+    "injured",
+    "hurt",
+    "wounded",
+    "hobble"
+   ],
+   "description": "limping on an injured right leg",
+   "frames": 72,
+   "duration": 2.367,
+   "end_disp": [
+    0.509,
+    0.754
+   ],
+   "end_yaw": 0.02,
+   "avg_speed": 0.384,
+   "height": 1.509,
+   "source": "mocap"
+  },
+  {
+   "id": "walk_drunk",
+   "cmu": "91_09",
+   "category": "locomotion",
+   "tags": [
+    "drunk",
+    "stagger",
+    "stumble",
+    "wobble",
+    "dizzy"
+   ],
+   "description": "staggering drunk walk",
+   "frames": 70,
+   "duration": 2.3,
+   "end_disp": [
+    -0.175,
+    1.055
+   ],
+   "end_yaw": -0.008,
+   "avg_speed": 0.465,
+   "height": 1.659,
+   "source": "mocap"
+  },
+  {
+   "id": "pace",
+   "cmu": "143_29",
+   "category": "locomotion",
+   "tags": [
+    "pace",
+    "pacing",
+    "nervous",
+    "anxious",
+    "worried",
+    "thinking"
+   ],
+   "description": "pacing back and forth",
+   "frames": 48,
+   "duration": 1.567,
+   "end_disp": [
+    0.121,
+    1.268
+   ],
+   "end_yaw": 0.031,
+   "avg_speed": 0.813,
+   "height": 1.678,
+   "source": "mocap"
+  },
+  {
+   "id": "run",
+   "cmu": "143_01",
+   "category": "locomotion",
+   "tags": [
+    "run",
+    "running",
+    "sprint",
+    "dash",
+    "rush",
+    "charge",
+    "flee",
+    "chase",
+    "hurry"
+   ],
+   "description": "running fast",
+   "frames": 43,
+   "duration": 1.4,
+   "end_disp": [
+    -0.453,
+    5.461
+   ],
+   "end_yaw": 0.034,
+   "avg_speed": 3.914,
+   "height": 1.683,
+   "source": "mocap"
+  },
+  {
+   "id": "run_stop",
+   "cmu": "143_02",
+   "category": "locomotion",
+   "tags": [
+    "run then brake",
+    "skid",
+    "arrive running",
+    "run to a standstill"
+   ],
+   "description": "runs, then brakes to a standstill",
+   "frames": 48,
+   "duration": 1.567,
+   "end_disp": [
+    -0.711,
+    3.864
+   ],
+   "end_yaw": -0.087,
+   "avg_speed": 2.508,
+   "height": 1.665,
+   "source": "mocap"
+  },
+  {
+   "id": "run_start",
+   "cmu": "143_03",
+   "category": "locomotion",
+   "tags": [
+    "start to run",
+    "take off",
+    "burst",
+    "startled run",
+    "flee"
+   ],
+   "description": "starts from standing into a run",
+   "frames": 48,
+   "duration": 1.567,
+   "end_disp": [
+    0.07,
+    4.222
+   ],
+   "end_yaw": 0.116,
+   "avg_speed": 2.695,
+   "height": 1.64,
+   "source": "mocap"
+  },
+  {
+   "id": "jump",
+   "cmu": "143_05",
+   "category": "action",
+   "tags": [
+    "jump",
+    "leap",
+    "jumping",
+    "bound",
+    "long jump"
+   ],
+   "description": "jumps forward for distance",
+   "frames": 162,
+   "duration": 5.367,
+   "end_disp": [
+    0.25,
+    5.191
+   ],
+   "end_yaw": 0.51,
+   "avg_speed": 0.968,
+   "height": 1.676,
+   "source": "mocap"
+  },
+  {
+   "id": "jump_twist",
+   "cmu": "143_08",
+   "category": "action",
+   "tags": [
+    "jump twist",
+    "spin jump",
+    "twist",
+    "celebrate",
+    "cheer",
+    "victory jump"
+   ],
+   "description": "jumps with a twist in the air",
+   "frames": 187,
+   "duration": 6.2,
+   "end_disp": [
+    -0.526,
+    0.143
+   ],
+   "end_yaw": 1.596,
+   "avg_speed": 0.088,
+   "height": 1.7,
+   "source": "mocap"
+  },
+  {
+   "id": "hop",
+   "cmu": "143_31",
+   "category": "action",
+   "tags": [
+    "hop",
+    "hopscotch",
+    "skip",
+    "playful",
+    "child",
+    "game"
+   ],
+   "description": "hopscotch hopping",
+   "frames": 205,
+   "duration": 6.8,
+   "end_disp": [
+    0.101,
+    3.616
+   ],
+   "end_yaw": 0.047,
+   "avg_speed": 0.532,
+   "height": 1.669,
+   "source": "mocap"
+  },
+  {
+   "id": "punch",
+   "cmu": "143_23",
+   "category": "combat",
+   "tags": [
+    "punch",
+    "punching",
+    "strike",
+    "hit",
+    "attack",
+    "jab",
+    "lunge",
+    "fight",
+    "fist"
+   ],
+   "description": "throws punches",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -0.039,
+    -0.01
+   ],
+   "end_yaw": -0.447,
+   "avg_speed": 0.005,
+   "height": 1.681,
+   "source": "mocap"
+  },
+  {
+   "id": "kick",
+   "cmu": "143_24",
+   "category": "combat",
+   "tags": [
+    "kick",
+    "kicking",
+    "strike",
+    "attack",
+    "fight",
+    "front kick"
+   ],
+   "description": "kicks",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -0.206,
+    -0.03
+   ],
+   "end_yaw": -0.037,
+   "avg_speed": 0.026,
+   "height": 1.648,
+   "source": "mocap"
+  },
+  {
+   "id": "punch_kick",
+   "cmu": "141_14",
+   "category": "combat",
+   "tags": [
+    "punch and kick",
+    "combo",
+    "fight",
+    "brawl",
+    "attack",
+    "martial arts"
+   ],
+   "description": "punch and kick combination",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.74,
+    0.144
+   ],
+   "end_yaw": -1.03,
+   "avg_speed": 0.095,
+   "height": 1.799,
+   "source": "mocap"
+  },
+  {
+   "id": "boxing",
+   "cmu": "13_17",
+   "category": "combat",
+   "tags": [
+    "boxing",
+    "boxer",
+    "guard",
+    "spar",
+    "sparring",
+    "fight",
+    "fists up",
+    "circle",
+    "duel"
+   ],
+   "description": "boxing stance, sparring and jabbing",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -0.156,
+    0.515
+   ],
+   "end_yaw": 0.153,
+   "avg_speed": 0.068,
+   "height": 1.873,
+   "source": "mocap"
+  },
+  {
+   "id": "sword",
+   "cmu": "02_07",
+   "category": "combat",
+   "tags": [
+    "sword",
+    "swordplay",
+    "fencing",
+    "duel",
+    "slash",
+    "blade",
+    "stab"
+   ],
+   "description": "swordplay attacks",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.049,
+    0.082
+   ],
+   "end_yaw": 0.44,
+   "avg_speed": 0.012,
+   "height": 1.869,
+   "source": "mocap"
+  },
+  {
+   "id": "spin_kick",
+   "cmu": "88_06",
+   "category": "combat",
+   "tags": [
+    "spin kick",
+    "jump kick",
+    "acrobatic",
+    "martial arts",
+    "roundhouse"
+   ],
+   "description": "jumping spin kick",
+   "frames": 51,
+   "duration": 1.667,
+   "end_disp": [
+    2.16,
+    0.708
+   ],
+   "end_yaw": 0.299,
+   "avg_speed": 1.364,
+   "height": 1.694,
+   "source": "mocap"
+  },
+  {
+   "id": "fall_face",
+   "cmu": "90_16",
+   "category": "reaction",
+   "tags": [
+    "fall",
+    "falls",
+    "fall down",
+    "collapse",
+    "knocked down",
+    "trip",
+    "faint",
+    "die",
+    "defeated",
+    "dodge and fall"
+   ],
+   "description": "falls forward onto the face",
+   "frames": 117,
+   "duration": 3.867,
+   "end_disp": [
+    -0.164,
+    0.094
+   ],
+   "end_yaw": 2.977,
+   "avg_speed": 0.049,
+   "height": 0.386,
+   "source": "mocap"
+  },
+  {
+   "id": "fall_back",
+   "cmu": "90_18",
+   "category": "reaction",
+   "tags": [
+    "fall back",
+    "slip",
+    "rug pull",
+    "knocked back",
+    "fall over",
+    "blown back"
+   ],
+   "description": "feet pulled out, falls backwards",
+   "frames": 92,
+   "duration": 3.033,
+   "end_disp": [
+    0.021,
+    0.015
+   ],
+   "end_yaw": -0.145,
+   "avg_speed": 0.009,
+   "height": 0.084,
+   "source": "mocap"
+  },
+  {
+   "id": "get_up",
+   "cmu": "140_08",
+   "category": "reaction",
+   "tags": [
+    "get up",
+    "stand up",
+    "rise",
+    "recover",
+    "get back up",
+    "from ground"
+   ],
+   "description": "gets up from lying on the back",
+   "frames": 200,
+   "duration": 6.633,
+   "end_disp": [
+    0.053,
+    0.881
+   ],
+   "end_yaw": -0.028,
+   "avg_speed": 0.133,
+   "height": 0.895,
+   "source": "mocap"
+  },
+  {
+   "id": "cartwheel",
+   "cmu": "144_01",
+   "category": "acrobatic",
+   "tags": [
+    "cartwheel",
+    "acrobatic",
+    "gymnastics",
+    "tumble",
+    "flip",
+    "show off"
+   ],
+   "description": "cartwheels",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -1.184,
+    3.149
+   ],
+   "end_yaw": 2.45,
+   "avg_speed": 0.422,
+   "height": 1.475,
+   "source": "mocap"
+  },
+  {
+   "id": "backflip",
+   "cmu": "88_01",
+   "category": "acrobatic",
+   "tags": [
+    "backflip",
+    "flip",
+    "acrobatic",
+    "stunt",
+    "somersault"
+   ],
+   "description": "backflip",
+   "frames": 44,
+   "duration": 1.433,
+   "end_disp": [
+    0.205,
+    -0.785
+   ],
+   "end_yaw": -0.13,
+   "avg_speed": 0.566,
+   "height": 1.639,
+   "source": "mocap"
+  },
+  {
+   "id": "wave",
+   "cmu": "143_25",
+   "category": "social",
+   "tags": [
+    "wave",
+    "waving",
+    "hello",
+    "greet",
+    "goodbye",
+    "hi",
+    "signal",
+    "call"
+   ],
+   "description": "waves hello",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -0.001,
+    -0.022
+   ],
+   "end_yaw": -0.01,
+   "avg_speed": 0.003,
+   "height": 1.688,
+   "source": "mocap"
+  },
+  {
+   "id": "high_five",
+   "cmu": "141_22",
+   "category": "social",
+   "tags": [
+    "high five",
+    "celebrate",
+    "team",
+    "congratulate",
+    "victory"
+   ],
+   "description": "gives a high five",
+   "frames": 92,
+   "duration": 3.033,
+   "end_disp": [
+    -0.042,
+    4.008
+   ],
+   "end_yaw": -0.009,
+   "avg_speed": 1.322,
+   "height": 1.773,
+   "source": "mocap"
+  },
+  {
+   "id": "handshake",
+   "cmu": "141_23",
+   "category": "social",
+   "tags": [
+    "shake hands",
+    "handshake",
+    "greet",
+    "meet",
+    "deal",
+    "agree",
+    "introduce"
+   ],
+   "description": "shakes hands",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.512,
+    1.713
+   ],
+   "end_yaw": 0.255,
+   "avg_speed": 0.447,
+   "height": 1.77,
+   "source": "mocap"
+  },
+  {
+   "id": "shrug",
+   "cmu": "141_21",
+   "category": "social",
+   "tags": [
+    "shrug",
+    "dunno",
+    "confused",
+    "unsure",
+    "whatever",
+    "indifferent"
+   ],
+   "description": "shrugs shoulders",
+   "frames": 129,
+   "duration": 4.267,
+   "end_disp": [
+    0.027,
+    0.014
+   ],
+   "end_yaw": 0.079,
+   "avg_speed": 0.007,
+   "height": 1.772,
+   "source": "mocap"
+  },
+  {
+   "id": "curtsey",
+   "cmu": "141_26",
+   "category": "social",
+   "tags": [
+    "curtsey",
+    "bow",
+    "polite",
+    "respect",
+    "thank",
+    "greet formally"
+   ],
+   "description": "curtsey bow",
+   "frames": 192,
+   "duration": 6.367,
+   "end_disp": [
+    -0.351,
+    2.325
+   ],
+   "end_yaw": -1.698,
+   "avg_speed": 0.369,
+   "height": 1.774,
+   "source": "mocap"
+  },
+  {
+   "id": "mope",
+   "cmu": "141_27",
+   "category": "emotion",
+   "tags": [
+    "mope",
+    "sad",
+    "upset",
+    "sulk",
+    "disappointed",
+    "grief",
+    "despair"
+   ],
+   "description": "mopes sadly",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.633,
+    2.967
+   ],
+   "end_yaw": -0.763,
+   "avg_speed": 0.381,
+   "height": 1.746,
+   "source": "mocap"
+  },
+  {
+   "id": "laugh",
+   "cmu": "13_14",
+   "category": "emotion",
+   "tags": [
+    "laugh",
+    "laughing",
+    "happy",
+    "joke",
+    "amused",
+    "giggle"
+   ],
+   "description": "laughs",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.078,
+    -0.628
+   ],
+   "end_yaw": -0.844,
+   "avg_speed": 0.079,
+   "height": 2.001,
+   "source": "mocap"
+  },
+  {
+   "id": "angry",
+   "cmu": "18_10",
+   "category": "emotion",
+   "tags": [
+    "angry",
+    "argue",
+    "quarrel",
+    "shout",
+    "furious",
+    "gesture",
+    "yell",
+    "frustrated"
+   ],
+   "description": "angry hand gestures, arguing",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -0.211,
+    1.163
+   ],
+   "end_yaw": -2.658,
+   "avg_speed": 0.148,
+   "height": 1.929,
+   "source": "mocap"
+  },
+  {
+   "id": "peekaboo",
+   "cmu": "143_33",
+   "category": "emotion",
+   "tags": [
+    "peek a boo",
+    "playful",
+    "hide",
+    "surprise",
+    "child"
+   ],
+   "description": "plays peek-a-boo",
+   "frames": 174,
+   "duration": 5.767,
+   "end_disp": [
+    -0.007,
+    -0.014
+   ],
+   "end_yaw": 0.019,
+   "avg_speed": 0.003,
+   "height": 1.682,
+   "source": "mocap"
+  },
+  {
+   "id": "sit",
+   "cmu": "143_18",
+   "category": "pose",
+   "tags": [
+    "sit",
+    "sit down",
+    "seat",
+    "chair",
+    "rest",
+    "get up",
+    "sit and stand"
+   ],
+   "description": "sits down and gets back up",
+   "frames": 102,
+   "duration": 3.367,
+   "end_disp": [
+    -0.018,
+    -0.297
+   ],
+   "end_yaw": -0.066,
+   "avg_speed": 0.088,
+   "height": 1.359,
+   "source": "mocap"
+  },
+  {
+   "id": "sit_stool",
+   "cmu": "141_17",
+   "category": "pose",
+   "tags": [
+    "sit on stool",
+    "sit",
+    "perch",
+    "stool",
+    "bar",
+    "wait seated"
+   ],
+   "description": "sits on a stool",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    1.088,
+    1.264
+   ],
+   "end_yaw": 1.211,
+   "avg_speed": 0.209,
+   "height": 1.791,
+   "source": "mocap"
+  },
+  {
+   "id": "pick_up",
+   "cmu": "143_11",
+   "category": "work",
+   "tags": [
+    "pick up",
+    "lift",
+    "carry",
+    "box",
+    "grab",
+    "collect",
+    "take"
+   ],
+   "description": "walks over and picks up a box",
+   "frames": 192,
+   "duration": 6.367,
+   "end_disp": [
+    -0.166,
+    -1.033
+   ],
+   "end_yaw": 2.858,
+   "avg_speed": 0.164,
+   "height": 1.584,
+   "source": "mocap"
+  },
+  {
+   "id": "throw",
+   "cmu": "143_20",
+   "category": "work",
+   "tags": [
+    "throw",
+    "toss",
+    "catch",
+    "pass",
+    "hurl",
+    "ball"
+   ],
+   "description": "catches and throws",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -0.005,
+    0.025
+   ],
+   "end_yaw": -0.155,
+   "avg_speed": 0.003,
+   "height": 1.702,
+   "source": "mocap"
+  },
+  {
+   "id": "push",
+   "cmu": "81_06",
+   "category": "work",
+   "tags": [
+    "push",
+    "shove",
+    "heavy",
+    "force",
+    "move object",
+    "press"
+   ],
+   "description": "pushes a heavy box",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.058,
+    4.271
+   ],
+   "end_yaw": 0.024,
+   "avg_speed": 0.536,
+   "height": 1.241,
+   "source": "mocap"
+  },
+  {
+   "id": "climb",
+   "cmu": "143_37",
+   "category": "work",
+   "tags": [
+    "climb",
+    "ladder",
+    "climb up",
+    "ascend",
+    "descend"
+   ],
+   "description": "climbs up and down a ladder",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.041,
+    -0.008
+   ],
+   "end_yaw": -0.041,
+   "avg_speed": 0.005,
+   "height": 1.975,
+   "source": "mocap"
+  },
+  {
+   "id": "sweep",
+   "cmu": "143_28",
+   "category": "work",
+   "tags": [
+    "sweep",
+    "broom",
+    "clean",
+    "chore",
+    "janitor"
+   ],
+   "description": "sweeps with a push broom",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -2.025,
+    1.991
+   ],
+   "end_yaw": -0.483,
+   "avg_speed": 0.356,
+   "height": 1.588,
+   "source": "mocap"
+  },
+  {
+   "id": "stretch",
+   "cmu": "143_30",
+   "category": "work",
+   "tags": [
+    "stretch",
+    "yawn",
+    "wake up",
+    "tired",
+    "sleepy",
+    "warm up"
+   ],
+   "description": "stretches and yawns",
+   "frames": 178,
+   "duration": 5.9,
+   "end_disp": [
+    -0.158,
+    0.057
+   ],
+   "end_yaw": -0.105,
+   "avg_speed": 0.029,
+   "height": 1.691,
+   "source": "mocap"
+  },
+  {
+   "id": "salsa",
+   "cmu": "60_01",
+   "category": "dance",
+   "tags": [
+    "salsa",
+    "dance",
+    "dancing",
+    "party",
+    "latin",
+    "partner dance"
+   ],
+   "description": "salsa dancing",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -0.062,
+    0.914
+   ],
+   "end_yaw": -2.101,
+   "avg_speed": 0.115,
+   "height": 1.87,
+   "source": "mocap"
+  },
+  {
+   "id": "chicken_dance",
+   "cmu": "143_34",
+   "category": "dance",
+   "tags": [
+    "chicken dance",
+    "dance",
+    "silly",
+    "funny",
+    "party",
+    "celebrate"
+   ],
+   "description": "does the chicken dance",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -0.186,
+    0.027
+   ],
+   "end_yaw": 0.149,
+   "avg_speed": 0.024,
+   "height": 1.702,
+   "source": "mocap"
+  },
+  {
+   "id": "ballet",
+   "cmu": "05_02",
+   "category": "dance",
+   "tags": [
+    "ballet",
+    "pirouette",
+    "graceful",
+    "elegant",
+    "dance",
+    "spin"
+   ],
+   "description": "expressive ballet with a pirouette",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -0.715,
+    1.594
+   ],
+   "end_yaw": -0.66,
+   "avg_speed": 0.219,
+   "height": 1.854,
+   "source": "mocap"
+  },
+  {
+   "id": "crawl",
+   "cmu": "111_03",
+   "category": "pose",
+   "tags": [
+    "crawl",
+    "crawling",
+    "hands and knees",
+    "baby",
+    "creep low",
+    "wounded crawl"
+   ],
+   "description": "crawls on hands and knees",
+   "frames": 198,
+   "duration": 6.567,
+   "end_disp": [
+    0.313,
+    1.424
+   ],
+   "end_yaw": -0.083,
+   "avg_speed": 0.222,
+   "height": 0.78,
+   "source": "mocap"
+  },
+  {
+   "id": "duck",
+   "cmu": "139_09",
+   "category": "reaction",
+   "tags": [
+    "duck",
+    "dodge",
+    "evade",
+    "avoid",
+    "crouch",
+    "cover",
+    "flinch"
+   ],
+   "description": "ducks to dodge",
+   "frames": 93,
+   "duration": 3.067,
+   "end_disp": [
+    0.02,
+    0.142
+   ],
+   "end_yaw": -0.037,
+   "avg_speed": 0.047,
+   "height": 1.358,
+   "source": "mocap"
+  },
+  {
+   "id": "flashlight",
+   "cmu": "77_05",
+   "category": "action",
+   "tags": [
+    "look around",
+    "search",
+    "flashlight",
+    "investigate",
+    "scan",
+    "explore",
+    "examine"
+   ],
+   "description": "looks around searching with a flashlight",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -0.044,
+    0.049
+   ],
+   "end_yaw": 0.029,
+   "avg_speed": 0.008,
+   "height": 1.713,
+   "source": "mocap"
+  },
+  {
+   "id": "drink",
+   "cmu": "80_40",
+   "category": "action",
+   "tags": [
+    "drink",
+    "drinking",
+    "bottle",
+    "thirsty",
+    "sip"
+   ],
+   "description": "drinks from a bottle",
+   "frames": 222,
+   "duration": 7.367,
+   "end_disp": [
+    -0.001,
+    0.015
+   ],
+   "end_yaw": -0.038,
+   "avg_speed": 0.002,
+   "height": 1.86,
+   "source": "mocap"
+  },
+  {
+   "id": "eat_dinner",
+   "cmu": "79_12",
+   "category": "daily",
+   "tags": [
+    "eat",
+    "eats",
+    "eating",
+    "dinner",
+    "lunch",
+    "meal",
+    "plate",
+    "fork",
+    "knife",
+    "dine",
+    "food",
+    "breakfast"
+   ],
+   "description": "eats a meal from a plate with a fork and knife",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.002,
+    0.011
+   ],
+   "end_yaw": 0.014,
+   "avg_speed": 0.001,
+   "height": 1.915,
+   "source": "mocap"
+  },
+  {
+   "id": "eat_soup",
+   "cmu": "79_42",
+   "category": "daily",
+   "tags": [
+    "soup",
+    "bowl",
+    "spoon",
+    "eat soup",
+    "slurp",
+    "broth"
+   ],
+   "description": "eats soup from a bowl with a spoon",
+   "frames": 191,
+   "duration": 6.333,
+   "end_disp": [
+    -0.003,
+    0.002
+   ],
+   "end_yaw": -0.017,
+   "avg_speed": 0.001,
+   "height": 1.93,
+   "source": "mocap"
+  },
+  {
+   "id": "eat_sandwich",
+   "cmu": "79_15",
+   "category": "daily",
+   "tags": [
+    "sandwich",
+    "burger",
+    "bite",
+    "snack",
+    "eat with hands",
+    "roti",
+    "dosa",
+    "pizza"
+   ],
+   "description": "eats a sandwich with both hands",
+   "frames": 212,
+   "duration": 7.033,
+   "end_disp": [
+    -0.0,
+    0.02
+   ],
+   "end_yaw": 0.013,
+   "avg_speed": 0.003,
+   "height": 1.929,
+   "source": "mocap"
+  },
+  {
+   "id": "chop",
+   "cmu": "79_10",
+   "category": "daily",
+   "tags": [
+    "chop",
+    "chopping",
+    "cut",
+    "cutting",
+    "onion",
+    "vegetables",
+    "knife",
+    "dice",
+    "cook",
+    "prep"
+   ],
+   "description": "chops onions on a cutting board",
+   "frames": 169,
+   "duration": 5.6,
+   "end_disp": [
+    0.0,
+    0.043
+   ],
+   "end_yaw": 0.006,
+   "avg_speed": 0.008,
+   "height": 1.915,
+   "source": "mocap"
+  },
+  {
+   "id": "slice",
+   "cmu": "79_09",
+   "category": "daily",
+   "tags": [
+    "slice",
+    "slicing",
+    "bread",
+    "loaf",
+    "cut bread",
+    "carve"
+   ],
+   "description": "slices a loaf of bread",
+   "frames": 203,
+   "duration": 6.733,
+   "end_disp": [
+    -0.007,
+    0.023
+   ],
+   "end_yaw": 0.005,
+   "avg_speed": 0.004,
+   "height": 1.915,
+   "source": "mocap"
+  },
+  {
+   "id": "mix",
+   "cmu": "79_13",
+   "category": "daily",
+   "tags": [
+    "mix",
+    "mixing",
+    "stir",
+    "stirring",
+    "whisk",
+    "batter",
+    "bowl",
+    "cook",
+    "cooking",
+    "beat eggs"
+   ],
+   "description": "mixes batter in a bowl",
+   "frames": 159,
+   "duration": 5.267,
+   "end_disp": [
+    -0.001,
+    0.031
+   ],
+   "end_yaw": -0.054,
+   "avg_speed": 0.006,
+   "height": 1.898,
+   "source": "mocap"
+  },
+  {
+   "id": "knead",
+   "cmu": "79_14",
+   "category": "daily",
+   "tags": [
+    "knead",
+    "kneading",
+    "dough",
+    "bake",
+    "baking",
+    "roll",
+    "flour",
+    "chapati"
+   ],
+   "description": "kneads and works dough",
+   "frames": 176,
+   "duration": 5.833,
+   "end_disp": [
+    -0.007,
+    0.05
+   ],
+   "end_yaw": 0.001,
+   "avg_speed": 0.009,
+   "height": 1.9,
+   "source": "mocap"
+  },
+  {
+   "id": "make_coffee",
+   "cmu": "80_31",
+   "category": "daily",
+   "tags": [
+    "make coffee",
+    "brew",
+    "coffee",
+    "tea",
+    "kettle",
+    "pour",
+    "prepare drink",
+    "cook"
+   ],
+   "description": "makes a cup of coffee",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.005,
+    0.006
+   ],
+   "end_yaw": -0.014,
+   "avg_speed": 0.001,
+   "height": 1.858,
+   "source": "mocap"
+  },
+  {
+   "id": "sip_coffee",
+   "cmu": "79_41",
+   "category": "daily",
+   "tags": [
+    "sip",
+    "coffee",
+    "tea",
+    "cup",
+    "mug",
+    "chai",
+    "hot drink"
+   ],
+   "description": "sips coffee from a cup",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.001,
+    -0.014
+   ],
+   "end_yaw": 0.013,
+   "avg_speed": 0.002,
+   "height": 1.928,
+   "source": "mocap"
+  },
+  {
+   "id": "set_glass",
+   "cmu": "80_27",
+   "category": "daily",
+   "tags": [
+    "set the table",
+    "place",
+    "glass",
+    "put down",
+    "serve",
+    "lay the table"
+   ],
+   "description": "sets a glass of water down on the table",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.001,
+    -0.001
+   ],
+   "end_yaw": 0.035,
+   "avg_speed": 0.0,
+   "height": 1.864,
+   "source": "mocap"
+  },
+  {
+   "id": "eat_casual",
+   "cmu": "80_24",
+   "category": "daily",
+   "tags": [
+    "eat",
+    "eating",
+    "munch",
+    "chew",
+    "snack",
+    "food"
+   ],
+   "description": "eats casually",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.013,
+    0.032
+   ],
+   "end_yaw": 0.069,
+   "avg_speed": 0.004,
+   "height": 1.862,
+   "source": "mocap"
+  },
+  {
+   "id": "carve",
+   "cmu": "80_32",
+   "category": "daily",
+   "tags": [
+    "slice",
+    "slicing",
+    "carve",
+    "carving",
+    "meat",
+    "cut",
+    "cook"
+   ],
+   "description": "slices food with a knife",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -0.002,
+    0.069
+   ],
+   "end_yaw": 0.013,
+   "avg_speed": 0.009,
+   "height": 1.86,
+   "source": "mocap"
+  },
+  {
+   "id": "phone_call",
+   "cmu": "79_36",
+   "category": "daily",
+   "tags": [
+    "phone",
+    "call",
+    "answer the phone",
+    "ring",
+    "talk on phone",
+    "mobile"
+   ],
+   "description": "answers the phone",
+   "frames": 123,
+   "duration": 4.067,
+   "end_disp": [
+    0.006,
+    0.027
+   ],
+   "end_yaw": -0.041,
+   "avg_speed": 0.007,
+   "height": 1.941,
+   "source": "mocap"
+  },
+  {
+   "id": "typing",
+   "cmu": "79_85",
+   "category": "daily",
+   "tags": [
+    "type",
+    "typing",
+    "laptop",
+    "computer",
+    "work",
+    "keyboard",
+    "email"
+   ],
+   "description": "types on a laptop",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -0.009,
+    0.006
+   ],
+   "end_yaw": 0.02,
+   "avg_speed": 0.001,
+   "height": 1.936,
+   "source": "mocap"
+  },
+  {
+   "id": "brush_teeth",
+   "cmu": "79_81",
+   "category": "daily",
+   "tags": [
+    "brush teeth",
+    "toothbrush",
+    "morning routine",
+    "bathroom"
+   ],
+   "description": "brushes teeth",
+   "frames": 228,
+   "duration": 7.567,
+   "end_disp": [
+    0.001,
+    0.092
+   ],
+   "end_yaw": -0.004,
+   "avg_speed": 0.012,
+   "height": 1.934,
+   "source": "mocap"
+  },
+  {
+   "id": "jumping_jacks",
+   "cmu": "22_16",
+   "category": "exercise",
+   "tags": [
+    "jumping jacks",
+    "star jumps",
+    "workout",
+    "exercise",
+    "warm up",
+    "cardio",
+    "pt"
+   ],
+   "description": "does jumping jacks",
+   "frames": 101,
+   "duration": 3.333,
+   "end_disp": [
+    -0.399,
+    -0.176
+   ],
+   "end_yaw": 0.024,
+   "avg_speed": 0.131,
+   "height": 1.972,
+   "source": "mocap"
+  },
+  {
+   "id": "squats",
+   "cmu": "22_14",
+   "category": "exercise",
+   "tags": [
+    "squat",
+    "squats",
+    "workout",
+    "exercise",
+    "leg day",
+    "deep knee bend",
+    "sit ups"
+   ],
+   "description": "does squats",
+   "frames": 170,
+   "duration": 5.633,
+   "end_disp": [
+    -0.013,
+    0.039
+   ],
+   "end_yaw": -0.073,
+   "avg_speed": 0.007,
+   "height": 1.926,
+   "source": "mocap"
+  },
+  {
+   "id": "weights",
+   "cmu": "79_93",
+   "category": "exercise",
+   "tags": [
+    "lift weights",
+    "weight lifting",
+    "dumbbell",
+    "barbell",
+    "gym",
+    "lift",
+    "curl",
+    "bench"
+   ],
+   "description": "lifts weights",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.003,
+    0.05
+   ],
+   "end_yaw": -0.039,
+   "avg_speed": 0.006,
+   "height": 1.837,
+   "source": "mocap"
+  },
+  {
+   "id": "warm_up",
+   "cmu": "77_21",
+   "category": "exercise",
+   "tags": [
+    "stretch",
+    "stretching",
+    "warm up",
+    "cool down",
+    "limber up",
+    "exercise"
+   ],
+   "description": "stretches to warm up",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.022,
+    0.0
+   ],
+   "end_yaw": 0.03,
+   "avg_speed": 0.003,
+   "height": 1.858,
+   "source": "mocap"
+  },
+  {
+   "id": "pushups",
+   "cmu": "keyframed:pushups",
+   "category": "exercise",
+   "tags": [
+    "pushup",
+    "pushups",
+    "push up",
+    "push ups",
+    "press up",
+    "press ups",
+    "push-ups",
+    "workout",
+    "exercise",
+    "gym",
+    "drop and give me"
+   ],
+   "description": "gets down and does five pushups, then stands up",
+   "frames": 275,
+   "duration": 9.133,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.735,
+   "source": "keyframed"
+  }
+ ]
+}
