@@ -11,7 +11,13 @@ Output: data/motions/<id>.json (positions in millimetres, int-packed) and
 data/motion_library.json (catalog + metadata used by the agent).
 
 Usage:
-  python tools/build_motion_library.py --bvh-root /path/to/cmu-mocap/data
+  python tools/build_motion_library.py                       # reuse built CMU clips, rebuild the rest
+  python tools/build_motion_library.py --bvh-root /path/to/cmu-mocap/data   # rebuild everything
+
+Catalog sources: a CMU take ("05_12"), a keyframed generator ("keyframed:name:args") or a studio take
+("studio:file.bvh", read from data/studio/ by tools/studio_import.py). Without --bvh-root (or when a
+take is missing) a CMU clip that was already built is reused as it is, so studio takes can be added
+without downloading the CMU database.
 """
 from __future__ import annotations
 
@@ -191,6 +197,14 @@ def wrap(a: float) -> float:
 
 
 def process_clip(bvh: Path, category: str, trim: str = ""):
+    """trim = "[a:b] [abs] [rev] [loop]".
+
+    a:b   seconds to keep, measured inside the chosen window (or the whole take with `abs`)
+    abs   trim the whole take and skip the automatic window
+    rev   play the result backwards (lying down = getting up reversed)
+    loop  force the loopable-locomotion window search
+    mirror  swap left and right (a sidestep to the left becomes one to the right)
+    """
     joints, data, frame_time = parse_bvh(bvh)
     subject = int(bvh.stem.split("_")[0])
     src_fps = TRUE_FPS.get(subject, round(1.0 / frame_time))
@@ -199,27 +213,54 @@ def process_clip(bvh: Path, category: str, trim: str = ""):
     pos = forward_kinematics(joints, data) * UNIT_TO_M
     idx = {j.name: k for k, j in enumerate(joints)}
     pos = pos[:, [idx[n] for n in KEEP]]
+    return window_and_finalize(pos, category, trim)
+
+
+def window_and_finalize(pos: np.ndarray, category: str, trim: str = ""):
+    """Shared by CMU and studio takes: pick the window, apply trim flags, normalise, measure."""
+    tokens = trim.split()
+    span = next((t for t in tokens if ":" in t), "")
+    flags = set(tokens) - {span}
     kidx = {n: k for k, n in enumerate(KEEP)}
 
-    if category == "locomotion" and len(pos) > 2 * OUT_FPS:
-        start, n = loop_window(pos, kidx)
-        pos = pos[start:start + n]
-    else:
-        n_max = int(MAX_SECONDS.get(category, DEFAULT_MAX_SECONDS) * OUT_FPS)
-        start = most_active_window(pos, n_max)
-        pos = pos[start:start + n_max]
-    if trim:  # "a:b" seconds within the chosen window, to start a clip right at its action
-        a, _, b = trim.partition(":")
+    if "abs" in flags:
+        a, _, b = span.partition(":")
         pos = pos[int(float(a or 0) * OUT_FPS): int(float(b) * OUT_FPS) if b else None]
-    return finalize(pos)
+    else:
+        if (category == "locomotion" or "loop" in flags) and len(pos) > 2 * OUT_FPS:
+            start, n = loop_window(pos, kidx)
+            pos = pos[start:start + n]
+        else:
+            n_max = int(MAX_SECONDS.get(category, DEFAULT_MAX_SECONDS) * OUT_FPS)
+            start = most_active_window(pos, n_max)
+            pos = pos[start:start + n_max]
+        if span:  # "a:b" seconds within the chosen window, to start a clip right at its action
+            a, _, b = span.partition(":")
+            pos = pos[int(float(a or 0) * OUT_FPS): int(float(b) * OUT_FPS) if b else None]
+    if "rev" in flags:
+        pos = pos[::-1].copy()
+    if "mirror" in flags:
+        swap = [kidx[n.replace("Left", "#").replace("Right", "Left").replace("#", "Right")] for n in KEEP]
+        pos = pos[:, swap].copy()
+        pos[..., 0] *= -1
+    align = next((float(t.split("=")[1]) for t in flags if t.startswith("align=")), None)
+    return finalize(pos, align)
 
 
-def finalize(pos: np.ndarray):
-    """Normalize a (F, J, 3) clip in KEEP order and compute its blocking metadata."""
+def finalize(pos: np.ndarray, align: float | None = None):
+    """Normalize a (F, J, 3) clip in KEEP order and compute its blocking metadata.
+
+    align: fraction of the clip at which the body should face +Z (a strike's moment of impact);
+    by default the first frames face +Z.
+    """
     kidx = {n: k for k, n in enumerate(KEEP)}
     # Normalize: root starts at origin facing +Z, feet on the floor.
     yaw = np.unwrap(heading(pos, kidx))
-    yaw0 = float(np.median(yaw[: min(5, len(yaw))]))
+    if align is None:
+        yaw0 = float(np.median(yaw[: min(5, len(yaw))]))
+    else:
+        i = int(align * (len(yaw) - 1))
+        yaw0 = float(np.median(yaw[max(0, i - 2): i + 3]))
     pos = pos - np.array([pos[0, 0, 0], 0.0, pos[0, 0, 2]])
     c, s = math.cos(-yaw0), math.sin(-yaw0)
     x, z = pos[..., 0].copy(), pos[..., 2].copy()
@@ -245,9 +286,31 @@ def finalize(pos: np.ndarray):
     return meta, packed
 
 
+def strike_yaw(packed) -> float:
+    """Direction of a strike relative to the body's +Z, at the moment of maximum reach.
+
+    A side kick lands 90 degrees off the facing direction; blocking uses this to aim the strike, not the chest.
+    """
+    pos = np.array(packed, dtype=float).reshape(len(packed), -1, 3) / 1000
+    k = {n: i for i, n in enumerate(KEEP)}
+    best, best_d = 0.0, -1.0
+    for f in range(len(pos)):
+        hips = pos[f, k["Hips"]]
+        yaw = heading(pos[f:f + 1], k)[0]
+        for eff in ("LeftHand", "RightHand", "LeftToeBase", "RightToeBase"):
+            v = pos[f, k[eff]] - hips
+            if eff.endswith("ToeBase") and pos[f, k[eff], 1] < 0.45:
+                continue  # a planted foot is not a kick
+            d = math.hypot(v[0], v[2])
+            if d > best_d:
+                best_d, best = d, wrap(math.atan2(v[0], v[2]) - yaw)
+    return round(best, 3)
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--bvh-root", required=True, type=Path)
+    ap.add_argument("--bvh-root", type=Path, help="CMU BVH folder; omit to reuse CMU clips already built")
+    ap.add_argument("--studio-root", type=Path, default=Path(__file__).resolve().parents[1] / "data" / "studio")
     ap.add_argument("--catalog", default=Path(__file__).resolve().parents[1] / "data" / "clip_catalog.tsv", type=Path)
     ap.add_argument("--out", default=Path(__file__).resolve().parents[1] / "data", type=Path)
     args = ap.parse_args()
@@ -259,17 +322,42 @@ def main():
                "source": "CMU Graphics Lab Motion Capture Database (mocap.cs.cmu.edu), BVH conversion by B. Hahne",
                "clips": []}
     reference = None  # a standing pose for keyframed clips (first frame of the first idle clip)
+    built = {}  # clips from the previous build, reused when their CMU take is not available
+    old_lib = args.out / "motion_library.json"
+    if old_lib.exists():
+        built = {c["id"]: c for c in json.loads(old_lib.read_text())["clips"]}
+    reused = 0
     with args.catalog.open() as fh:
         for row in csv.DictReader(fh, delimiter="\t"):
+            extra = dict(kv.split("=", 1) for kv in (row.get("extra") or "").split() if "=" in kv)
             if row["cmu"].startswith("keyframed:"):
                 sys.path.insert(0, str(Path(__file__).resolve().parent))
-                from synth_motion import GENERATORS  # tools/synth_motion.py
-                gen = GENERATORS[row["cmu"].split(":", 1)[1]]
-                meta, packed = finalize(gen(reference, KEEP, BONES))
+                import synth_motion  # tools/synth_motion.py
+                from synth_motion import GENERATORS
+                synth_motion.MOTIONS_DIR = motions_dir  # generators may start from a clip built earlier
+                name, *args_ = row["cmu"].split(":")[1:]
+                meta, packed = finalize(GENERATORS[name](reference, KEEP, BONES, *args_))
                 meta["source"] = "keyframed"
+            elif row["cmu"].startswith("studio:"):
+                import studio_import  # tools/studio_import.py
+                jm = json.loads((args.studio_root / extra["map"]).read_text()) if "map" in extra else None
+                pos = studio_import.load(args.studio_root / row["cmu"][7:], extra.get("units"), extra.get("up"),
+                                         float(extra["fps"]) if "fps" in extra else None, jm)
+                meta, packed = window_and_finalize(pos, row["category"], (row.get("trim") or "").strip())
+                meta["source"] = "studio"
             else:
                 subj = int(row["cmu"].split("_")[0])
-                bvh = args.bvh_root / f"{subj:03d}" / f"{row['cmu']}.bvh"
+                bvh = args.bvh_root / f"{subj:03d}" / f"{row['cmu']}.bvh" if args.bvh_root else None
+                if (bvh is None or not bvh.exists()) and row["id"] in built \
+                        and (motions_dir / f"{row['id']}.json").exists():
+                    library["clips"].append(built[row["id"]])  # reuse the clip exactly as built before
+                    reused += 1
+                    if reference is None and row["category"] == "idle":
+                        first = json.loads((motions_dir / f"{row['id']}.json").read_text())["frames"][0]
+                        reference = np.array(first, dtype=float).reshape(-1, 3) / 1000
+                    continue
+                if bvh is None or not bvh.exists():
+                    sys.exit(f"{row['id']}: CMU take {row['cmu']} not found and never built; pass --bvh-root")
                 meta, packed = process_clip(bvh, row["category"], (row.get("trim") or "").strip())
                 meta["source"] = "mocap"
                 if reference is None and row["category"] == "idle":
@@ -280,11 +368,18 @@ def main():
                 "id": row["id"], "cmu": row["cmu"], "category": row["category"],
                 "tags": [t.strip() for t in row["tags"].split(",") if t.strip()],
                 "description": row["description"], **meta,
+                **({"kind": extra["kind"]} if "kind" in extra else {}),
+                **({"weapon": extra["weapon"]} if "weapon" in extra else {}),
+                **({"prop": extra["prop"]} if "prop" in extra else {}),
+                **({"strike_yaw": strike_yaw(packed)} if extra.get("strike") == "1" else {}),
+                **({"tier": int(extra["tier"])} if "tier" in extra else {}),
+                **({"gaze": 1} if extra.get("gaze") == "1" else {}),
             })
             print(f"{row['id']:<14} {row['cmu']:<7} {meta['duration']:>5.1f}s "
                   f"disp={meta['end_disp']} yaw={meta['end_yaw']:+.2f} h={meta['height']:.2f}m")
     (args.out / "motion_library.json").write_text(json.dumps(library, indent=1))
-    print(f"\n{len(library['clips'])} clips -> {args.out / 'motion_library.json'}")
+    print(f"\n{len(library['clips'])} clips -> {args.out / 'motion_library.json'}"
+          + (f" ({reused} CMU clips reused from the previous build)" if reused else ""))
 
 
 if __name__ == "__main__":

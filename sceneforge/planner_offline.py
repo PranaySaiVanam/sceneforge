@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import re
 
-from .library import MotionLibrary, get_library
+from .library import Match, MotionLibrary, get_library
 from .schema import Beat, Character, MoveTo, ScenePlan, Setting, Shot
 
 ROLES = {
@@ -32,9 +32,13 @@ ROLES = {
     "mother": "mothers", "father": "fathers", "intruder": "intruders", "kid": "kids", "teenager": "teenagers",
 }
 PLURAL_TO_ROLE = {v: k for k, v in ROLES.items()}
-COUNTS = {"two": 2, "three": 3, "four": 4, "2": 2, "3": 3, "4": 4, "a pair of": 2, "a couple of": 2, "both": 2}
+COUNTS = {"two": 2, "three": 3, "four": 4, "2": 2, "3": 3, "4": 4, "a pair of": 2, "a couple of": 2, "both": 2,
+          "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9,
+          "10": 10, "a dozen": 10, "dozen": 10, "many": 8, "several": 6, "a group of": 5, "a crowd of": 10,
+          "a bunch of": 6, "lots of": 8}
+MAX_CAST = 10  # the stage holds ten actors
 NOT_NAMES = set("""The A An Then When While After Before As Meanwhile Finally Suddenly Both They He She It One Two Three
-Four Camera Close Wide Medium Slow Fast Cut Low High Over Tracking Track Pan Push Pull Orbit Crane Shot Scene Night Day
+Four Five Six Seven Eight Nine Ten Dozen Several Many Lots Group Crowd Bunch Camera Close Wide Medium Slow Fast Cut Low High Over Tracking Track Pan Push Pull Orbit Crane Shot Scene Night Day
 Dusk Dawn Sunset In On At With His Her Their Later Eventually Next Now Quickly Slowly Someone Everyone Nobody Angle
 POV Extreme Establishing Handheld Static Dolly Zoom Aerial Drone Lens Frame Shaky Hindi Telugu English I We You Our My Fade End Start Open Opening Inside Outside Rain Sun""".split())
 CAMERA_PATTERNS = [
@@ -95,7 +99,7 @@ class _Cast:
         self.groups: list[list[str]] = []
 
     def add(self, name: str, role: str | None = None) -> str:
-        cid = "ABCDEF"[len(self.chars)]
+        cid = "ABCDEFGHIJ"[len(self.chars)]
         self.chars.append(Character(id=cid, name=name))
         if role:
             self.roles.setdefault(role, []).append(cid)
@@ -113,29 +117,30 @@ def _extract_cast(text: str) -> _Cast:
     low = text.lower()
     # 1) Counted groups: "two fighters", "a pair of dancers"
     role_alt = "|".join(sorted(map(re.escape, PLURAL_TO_ROLE), key=len, reverse=True))
-    for m in re.finditer(rf"\b(two|three|four|2|3|4|a pair of|a couple of)\s+(?:\w+\s+)?({role_alt})\b", low):
-        n, role = COUNTS[m.group(1)], PLURAL_TO_ROLE[m.group(2)]
-        if role in cast.roles or len(cast.chars) >= 4:
+    count_alt = "|".join(sorted(map(re.escape, (k for k in COUNTS if k != "both")), key=len, reverse=True))
+    for m in re.finditer(rf"\b({count_alt}|\d{{1,3}})\s+(?:\w+\s+)?({role_alt})\b", low):
+        n, role = COUNTS.get(m.group(1)) or int(m.group(1)), PLURAL_TO_ROLE[m.group(2)]
+        if role in cast.roles or len(cast.chars) >= MAX_CAST or n < 1:
             continue
-        ids = [cast.add(f"{role.title()} {i + 1}", role) for i in range(min(n, 4 - len(cast.chars)))]
+        ids = [cast.add(f"{role.title()} {i + 1}", role) for i in range(min(n, MAX_CAST - len(cast.chars)))]
         cast.groups.append(ids)
     # 2) Proper names (capitalised, not a stop word, not a known role word)
     for m in re.finditer(r"\b([A-Z][a-z]{2,})\b", text):
         w = m.group(1)
         if w in NOT_NAMES or w.lower() in ROLES or w.lower() in PLURAL_TO_ROLE or w.lower() in LOCATIONS:
             continue
-        if not cast.by_name(w) and len(cast.chars) < 4:
+        if not cast.by_name(w) and len(cast.chars) < MAX_CAST:
             cast.add(w)
     # 3) Singular roles: "a tired soldier", "the detective", "another thief"
     sing_alt = "|".join(sorted(map(re.escape, ROLES), key=len, reverse=True))
     starts = [(m.start(), "the", m.group(1)) for m in re.finditer(rf"(?:^|[.!?;]\s+)({sing_alt})\b", low)]
     for pos, art, role in starts:  # "Mom kneads dough." -> a character with no article
-        if role not in cast.roles and len(cast.chars) < 4:
+        if role not in cast.roles and len(cast.chars) < MAX_CAST:
             cast.add(role.title(), role)
     for m in re.finditer(rf"\b(a|an|the|another|one|second|her|his|their|my)\s+(?:[a-z]+\s+){{0,2}}?({sing_alt})\b", low):
         art, role = m.group(1), m.group(2)
         existing = cast.roles.get(role, [])
-        if len(cast.chars) >= 4:
+        if len(cast.chars) >= MAX_CAST:
             break
         bound = cast.roles.get("_bound", [])
         unbound = [i for g in cast.groups for i in g if i not in bound]
@@ -174,7 +179,8 @@ def _refs_in(clause: str, cast: _Cast, last: str | None) -> list[tuple[int, list
             refs.append((m.start(), [c.id], "name"))
     for role, ids in cast.roles.items():
         plural = ROLES[role]
-        for m in re.finditer(rf"\b(the|both|all|two|three|four|\d)\s+(?:\w+\s+)?{re.escape(plural)}\b", low):
+        for m in re.finditer(rf"\b(the|both|all|two|three|four|five|six|seven|eight|nine|ten|dozen|several|many|"
+                             rf"group of|crowd of|bunch of|lots of|\d{{1,3}})\s+(?:\w+\s+)?{re.escape(plural)}\b", low):
             refs.append((m.start(), ids, "group"))
         for m in re.finditer(rf"(?:\b(?:the|a|an|her|his|their|my)\s+(?:[a-z]+\s+){{0,2}}?|^\s*){re.escape(role)}\b(?!s)", low):
             refs.append((m.start(), [ids[0]] if len(ids) == 1 else [last if last in ids else ids[0]], "role"))
@@ -248,6 +254,13 @@ def _sub_clauses(text: str, cast: _Cast) -> list[tuple[str, bool]]:
         for i, p in enumerate(parts):
             out.append((p, simul if i == 0 else False))
     return out
+
+
+CROWD_POOLS = {  # extra clips mixed into a crowd doing the same thing
+    "combat": ["punch", "kick", "boxing", "punch_kick", "karate_punch", "front_kick", "roundhouse", "spin_kick"],
+    "dance": ["salsa", "chicken_dance", "dance", "dance_2", "breakdance", "twist"],
+}
+VARIED = {"combat", "dance"}  # a crowd doing these gets a mix; anything else (singing, waving) stays in unison
 
 
 def plan_offline(prompt: str, lib: MotionLibrary | None = None) -> ScenePlan:
@@ -332,12 +345,34 @@ def plan_offline(prompt: str, lib: MotionLibrary | None = None) -> ScenePlan:
         else:
             start = cursor
         clause_end = start
-        for subj in subj_ids:
+        crowd = len(subj_ids) >= 5  # groups of up to four keep their original (lockstep) behaviour
+        if crowd and actions[0][1].clip.category not in VARIED and not actions[0][1].clip.is_locomotion:
+            crowd = False
+        variety = []
+        if crowd:  # a crowd never moves in lockstep: vary the clip within the matched category
+            top = actions[0][1]
+            pool = [m for m in lib.search(_without_cast(actions[0][0], cast), k=8)
+                    if m.clip.category == top.clip.category
+                    and m.score >= top.score * (0.92 if top.clip.is_locomotion else 0.45)
+                    and not re.search(r"side|back", m.clip.id)]
+            seen = {m.clip.id for m in pool}
+            for cid_ in CROWD_POOLS.get(top.clip.category, []):
+                if cid_ in lib.clips and cid_ not in seen and lib.clips[cid_].tier == 1:
+                    pool.append(Match(clip=lib.clips[cid_], score=top.score, confidence=top.confidence))
+            variety = pool or [top]
+        for si, subj in enumerate(subj_ids):
             t = start if simul else max(start, min(char_end.get(subj, 0.0), start + 0.01) if first_clip.id in REACTIONS else max(start, char_end.get(subj, 0.0)))
             tgt = target if target != subj else None
             if tgt is None and two and (len(subj_ids) > 1 or re.search(r"\b(each other|face|faces|facing|stare)\b", action_text.lower())):
                 tgt = next(c.id for c in cast.chars if c.id != subj)
-            for text, match in actions:
+            if crowd:
+                t += 0.15 * (si % 4)
+            for ai, (text, match) in enumerate(actions):
+                if crowd and ai == 0:
+                    match = variety[si % len(variety)]
+                    if match.clip.category == "combat":  # pair the crowd off: 1 v 2, 3 v 4, ...
+                        partner = subj_ids[si ^ 1] if (si ^ 1) < len(subj_ids) else subj_ids[0]
+                        tgt = partner if partner != subj else None
                 clip = match.clip
                 tl = text.lower()
                 speed = 0.8 if re.search(r"\b(slow|slowly|carefully|cautiously|wearily)\b", tl) else \

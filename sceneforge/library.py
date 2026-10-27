@@ -94,6 +94,12 @@ class Clip:
     avg_speed: float
     height: float
     source: str = "mocap"  # or "keyframed" for actions the dataset does not contain
+    kind: str = "human"  # skeleton the clip is for: human | dog | horse
+    weapon: str | None = None  # weapon the clip shows in the hands (gun, rifle, bow, mace, sword)
+    prop: str | None = None  # set dressing the clip needs (box, chair, door, button)
+    strike_yaw: float | None = None  # direction of the strike relative to the body at impact (radians)
+    tier: int = 1  # 1 = original library, 2 = extended pack (wins only by a clear margin)
+    gaze: int = 0  # 1: Head_End is tipped toward where the actor looks (the viewer draws the eyeline)
     tokens: list[str] = field(default_factory=list)
 
     @property
@@ -121,33 +127,60 @@ class MotionLibrary:
             clip = Clip(**c)
             clip.tokens = tokenize(" ".join(clip.tags) + " " + clip.description)
             self.clips[clip.id] = clip
-        n = len(self.clips)
-        self.avgdl = sum(len(c.tokens) for c in self.clips.values()) / n
-        df: dict[str, int] = {}
-        for c in self.clips.values():
-            for t in set(c.tokens):
-                df[t] = df.get(t, 0) + 1
-        self.idf = {t: math.log(1 + (n - d + 0.5) / (d + 0.5)) for t, d in df.items()}
+        # BM25 statistics per skeleton kind and tier, so new clips never change how the original ones rank
+        self.stats: dict[tuple[str, int], tuple[float, dict[str, float]]] = {}
+        for kind, tier in {(c.kind, c.tier) for c in self.clips.values()} | {(c.kind, 2) for c in self.clips.values()}:
+            group = [c for c in self.clips.values() if c.kind == kind and c.tier <= tier]
+            n = len(group)
+            avgdl = sum(len(c.tokens) for c in group) / n
+            df: dict[str, int] = {}
+            for c in group:
+                for t in set(c.tokens):
+                    df[t] = df.get(t, 0) + 1
+            self.stats[(kind, tier)] = (avgdl, {t: math.log(1 + (n - d + 0.5) / (d + 0.5)) for t, d in df.items()})
+        self.avgdl, self.idf = self.stats[("human", 1)]
         self._root_cache: dict[str, list[tuple[float, float, float]]] = {}
 
     # ------------------------------------------------------------------ search
-    def search(self, query: str, k: int = 3, hint: str | None = None) -> list[Match]:
+    EXT_MARGIN = 4.0
+    EXT_MIN = 7.0  # an extended clip must also be a strong match on its own
+
+    def _score(self, c: "Clip", q: list[str], ql: str, hint: str | None, stats) -> float:
+        avgdl, idf = stats
+        s = 0.0
+        dl = len(c.tokens)
+        for t in set(q):
+            tf = c.tokens.count(t)
+            if tf:
+                s += idf.get(t, 0) * tf * 2.2 / (tf + 1.2 * (0.25 + 0.75 * dl / avgdl))
+        for tag in c.tags:  # verbatim multi-word phrase bonus
+            if " " in tag and f" {tag} " in ql:
+                s += 3.0
+        if hint and hint.strip().lower() == c.id:
+            s += 8.0
+        return s
+
+    def search(self, query: str, k: int = 3, hint: str | None = None, kind: str = "human") -> list[Match]:
+        """Ranks clips for an action phrase.
+
+        Original (tier 1) clips are scored exactly as in the first release. Extended (tier 2) clips are scored
+        against the whole library and take a slot only when they beat the best original clip by EXT_MARGIN,
+        or when the planner names them; this keeps every existing scene's choices stable.
+        """
         q = tokenize(query + " " + (hint or ""))
         ql = " " + query.lower() + " "
-        scored = []
-        for c in self.clips.values():
-            s = 0.0
-            dl = len(c.tokens)
-            for t in set(q):
-                tf = c.tokens.count(t)
-                if tf:
-                    s += self.idf.get(t, 0) * tf * 2.2 / (tf + 1.2 * (0.25 + 0.75 * dl / self.avgdl))
-            for tag in c.tags:  # verbatim multi-word phrase bonus
-                if " " in tag and f" {tag} " in ql:
-                    s += 3.0
-            if hint and hint.strip().lower() == c.id:
-                s += 8.0
-            scored.append((s, c))
+        core_stats = self.stats.get((kind, 1), self.stats.get((kind, 2)))
+        all_stats = self.stats.get((kind, 2), core_stats)
+        core = [(self._score(c, q, ql, hint, core_stats), c) for c in self.clips.values() if c.kind == kind and c.tier == 1]
+        ext = [(self._score(c, q, ql, hint, all_stats), c) for c in self.clips.values() if c.kind == kind and c.tier == 2]
+        core.sort(key=lambda x: -x[0])
+        ext.sort(key=lambda x: -x[0])
+        best_core = core[0][0] if core else 0.0
+        scored = list(core)
+        for s, c in ext:
+            named = bool(hint and hint.strip().lower() == c.id)
+            strong = s >= best_core + self.EXT_MARGIN and s >= self.EXT_MIN
+            scored.append((s if (named or strong) else min(s, best_core - 0.01), c))
         scored.sort(key=lambda x: -x[0])
         top = [x for x in scored[:k] if x[0] > 0]
         if not top:
@@ -158,7 +191,8 @@ class MotionLibrary:
     def catalog_for_prompt(self) -> str:
         lines = []
         for c in self.clips.values():
-            lines.append(f"{c.id} [{c.category}, {c.duration:.1f}s{', loops' if c.is_locomotion else ''}]: {c.description}")
+            extra = "".join([f", {c.kind} only" if c.kind != "human" else "", f", holds {c.weapon}" if c.weapon else ""])
+            lines.append(f"{c.id} [{c.category}, {c.duration:.1f}s{', loops' if c.is_locomotion else ''}{extra}]: {c.description}")
         return "\n".join(lines)
 
     # ------------------------------------------------------------ root motion

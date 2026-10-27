@@ -96,7 +96,8 @@ export class Cinematographer {
     const head = heads[0];
     switch (shot.type) {
       case "wide": {
-        const d = Math.min(Math.max(7.5, spread * 1.3 + 5.5), 9.4); // stay inside the camera-rig ring
+        const cap = (this.scene?.characters?.length || 0) > 4 ? 21 : 9.4; // big casts get a longer throw
+        const d = Math.min(Math.max(7.5, spread * 1.3 + 5.5), cap);
         pos = center.clone().addScaledVector(dir, d).setY(2.7);
         look = center.clone().setY(1.0);
         break;

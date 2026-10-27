@@ -58,8 +58,36 @@
         <span>Direct scene</span><kbd>Ctrl ↵</kbd>
       </button>
 
+      <details class="syntax">
+        <summary>Command syntax</summary>
+        <p><code>Actor: Verb target [Modifier=Value]</code>, one line per beat. Lines run in order; add <code>[With=prev]</code> to run together or <code>[At=5s]</code> for an exact time.</p>
+        <dl>
+          <dt>Cast</dt><dd><code>Cast: Ravi, Bruno [Kind=Dog], Storm [Kind=Horse], 5 Zombies, Kira [Tail=Yes, Weapon=Bow, At=Grid 9H]</code></dd>
+          <dt>Move</dt><dd>Move to Grid 4B / [3, -2], Approach, Retreat from, Flee from, Turn to, Pace between A and B. <code>[Speed=Slow|Jog|Fast|Sprint, Style=Angry|Sneaky|Crouched|Injured|Scared|Zombie|March|Proud|Old]</code></dd>
+          <dt>Fight</dt><dd>Attack / Shoot / Takedown / Finish target <code>[Weapon=Fists|Kick|Sword|Mace|Gun|Rifle|Bow, Result=Hit|Gut|Block|Dodge|Fall]</code>, Roundhouse, Side kick, Block, Dodge, React, Equip sword, Holster</dd>
+          <dt>Body</dt><dd>Sit, Stand, Crouch, Kneel, Prone, Lie down, Mount / Dismount horse</dd>
+          <dt>Talk</dt><dd>Say "line", Argue with, Listen, Nod, Cower, Cheer, Wave, Point at, Salute, Clap, Shrug, Bow</dd>
+          <dt>Layers</dt><dd>Look at Kira / Camera / Grid 1A <code>[For=4s]</code> (head tracks while the body keeps moving), Startle <code>[From=North]</code>, Strafe left facing Guard, Hold cup / suitcase, Put down cup. Equipped guns and rifles take a grip pose automatically.</dd>
+          <dt>Obstacles</dt><dd><code>Set: Curb, Gap, Beam, Wall [Length=6]</code> · Step over curb, Squeeze through gap, Duck under beam. Walking into a wall or the stage edge stops with a bump; big direction changes pivot first; runs push off and brake.</dd>
+          <dt>Down</dt><dd>Faint / Collapse, Stay down <code>[Style=Still|Groan|Crawl]</code>, Crawl to Grid 5C. Anyone left on the ground keeps breathing or groaning.</dd>
+          <dt>Crowd</dt><dd><code>Spawn Crowd [Count=6, Path=Grid 2A to Grid 2T]</code> wanders with head turns; <code>[Activity=Chat|Idle|Phone|Read|Sweep|Wipe|Type|Dance]</code> at a spot. Chat with Kira, Check phone, Check watch, Cross arms, Loiter, Wipe counter, Sweep, Type on laptop, Read a book, Sing.</dd>
+          <dt>Mood</dt><dd><code>Mood Sad|Angry|Anxious|Stealthy</code> (lasts until changed) or <code>[Mood=Angry]</code> on one line: a posture overlay on walks, runs and idles.</dd>
+          <dt>Beats</dt><dd>Think <code>[Style=Pace]</code>, Exhausted, Wipe sweat, Flinch, Wake up, Faint. Fast runs wind down and seated poses settle the feet automatically.</dd>
+          <dt>Stunts</dt><dd>Push Bruno, Stagger <code>[From=Left]</code>, Leap of faith, High fall <code>[Land=Grid 8H]</code>, <code>Explosion at Grid 10M</code> (blast, shield or startle by distance).</dd>
+          <dt>Vehicles</dt><dd><code>Cast: Jeep [Kind=Car], Moto [Kind=Bike]</code> · Get in Jeep <code>[Seat=Passenger]</code>, Drive to Grid 8P, Jump out (bail and roll), Get out.</dd>
+          <dt>Utility</dt><dd>T-Pose / A-Pose, Teleport to Grid 10F, Stand-in, Scale reference next to Van, Eye-line calibration. Lines that can't be parsed reset the actor to an A-pose.</dd>
+          <dt>Use</dt><dd>Open door, Push button, Climb ladder, Pick up, Lift luggage, Carry box to Grid 5C, Load luggage into van, Lift weights</dd>
+          <dt>Set &amp; camera</dt><dd><code>Set: Van at Grid 14J [Facing=North]</code> · <code>Camera: Wide shot, slow orbit [At=2s, On=Ravi]</code></dd>
+        </dl>
+      </details>
+
       <div class="field">
-        <span class="label">Examples</span>
+        <span class="label">Command scripts</span>
+        <ul class="chips" id="scripts"></ul>
+      </div>
+
+      <div class="field">
+        <span class="label">Plain-English examples</span>
         <ul class="chips" id="examples"></ul>
       </div>
 
@@ -74,6 +102,7 @@
           <div class="hud-shot" id="hudShot"></div>
           <div class="hud-rec" id="hudRec" hidden>Recording</div>
           <div class="hud-tc" id="hudTc">00:00:00:00</div>
+          <div class="hud-say" id="hudSay" hidden></div>
         </div>
         <div class="loading" id="loading" hidden><span class="spinner" aria-hidden="true"></span>Directing scene</div>
         <div class="empty" id="empty" hidden>
@@ -95,6 +124,7 @@
           <button type="button" data-cam="free" role="radio" aria-checked="false">Free camera</button>
         </div>
         <label class="switch"><input type="checkbox" id="labels" checked /><span></span>Names</label>
+        <label class="switch" title="Draw every actor as a grey low-poly stand-in (lighting and lens checks)"><input type="checkbox" id="standins" /><span></span>Stand-ins</label>
         <label class="switch"><input type="checkbox" id="loop" checked /><span></span>Loop</label>
         <span class="spacer"></span>
         <button id="record" class="ghost" type="button" title="Render the director's cut to a video file"><i class="rec-dot"></i><span>Record video</span></button>

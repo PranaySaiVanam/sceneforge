@@ -1907,6 +1907,3281 @@
    "avg_speed": 0.0,
    "height": 0.735,
    "source": "keyframed"
+  },
+  {
+   "id": "walk_angry",
+   "cmu": "104_28",
+   "category": "locomotion",
+   "tags": [
+    "angry walk",
+    "walks angrily",
+    "angrily",
+    "stern",
+    "stomp",
+    "stomps",
+    "storm",
+    "storms off",
+    "furious walk",
+    "aggressive walk",
+    "determined"
+   ],
+   "description": "walks with a stern, angry stride",
+   "frames": 58,
+   "duration": 1.9,
+   "end_disp": [
+    0.134,
+    4.084
+   ],
+   "end_yaw": 0.009,
+   "avg_speed": 2.151,
+   "height": 1.869,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "walk_proud",
+   "cmu": "104_44",
+   "category": "locomotion",
+   "tags": [
+    "proud walk",
+    "confident",
+    "strut",
+    "swagger",
+    "attitude",
+    "cool walk",
+    "boss"
+   ],
+   "description": "walks with a confident strut",
+   "frames": 82,
+   "duration": 2.7,
+   "end_disp": [
+    0.117,
+    3.263
+   ],
+   "end_yaw": -0.006,
+   "avg_speed": 1.209,
+   "height": 1.902,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "walk_quick",
+   "cmu": "91_17",
+   "category": "locomotion",
+   "tags": [
+    "quick walk",
+    "brisk",
+    "hurry",
+    "fast walk",
+    "jog",
+    "rush",
+    "medium speed"
+   ],
+   "description": "walks quickly",
+   "frames": 48,
+   "duration": 1.567,
+   "end_disp": [
+    -0.433,
+    3.176
+   ],
+   "end_yaw": -0.085,
+   "avg_speed": 2.046,
+   "height": 1.682,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "walk_scared",
+   "cmu": "91_32",
+   "category": "locomotion",
+   "tags": [
+    "scared walk",
+    "nervous walk",
+    "afraid",
+    "timid",
+    "fearful",
+    "cautious"
+   ],
+   "description": "walks nervously, scared",
+   "frames": 74,
+   "duration": 2.433,
+   "end_disp": [
+    -0.018,
+    1.509
+   ],
+   "end_yaw": 0.059,
+   "avg_speed": 0.62,
+   "height": 1.687,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "walk_old",
+   "cmu": "137_33",
+   "category": "locomotion",
+   "tags": [
+    "old man walk",
+    "elderly",
+    "old",
+    "frail",
+    "shuffle",
+    "slow walk"
+   ],
+   "description": "shuffles like an old man",
+   "frames": 52,
+   "duration": 1.7,
+   "end_disp": [
+    -0.032,
+    0.871
+   ],
+   "end_yaw": -0.025,
+   "avg_speed": 0.512,
+   "height": 1.522,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "walk_heavy",
+   "cmu": "137_42",
+   "category": "locomotion",
+   "tags": [
+    "strong man walk",
+    "heavy walk",
+    "macho",
+    "muscular",
+    "bulky",
+    "brute"
+   ],
+   "description": "walks like a heavy strong man",
+   "frames": 56,
+   "duration": 1.833,
+   "end_disp": [
+    -0.176,
+    1.543
+   ],
+   "end_yaw": -0.066,
+   "avg_speed": 0.847,
+   "height": 1.886,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "walk_crouch",
+   "cmu": "136_09",
+   "category": "locomotion",
+   "tags": [
+    "crouch walk",
+    "crouched",
+    "crouching",
+    "low walk",
+    "stealth",
+    "cover",
+    "move crouched",
+    "crouch"
+   ],
+   "description": "walks crouched low",
+   "frames": 76,
+   "duration": 2.5,
+   "end_disp": [
+    -0.214,
+    2.868
+   ],
+   "end_yaw": 0.022,
+   "avg_speed": 1.151,
+   "height": 1.577,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "walk_crouch_back",
+   "cmu": "136_11",
+   "category": "locomotion",
+   "tags": [
+    "crouch backwards",
+    "crouched retreat",
+    "back away crouched"
+   ],
+   "description": "walks backwards while crouched",
+   "frames": 88,
+   "duration": 2.9,
+   "end_disp": [
+    -0.091,
+    -2.669
+   ],
+   "end_yaw": 0.002,
+   "avg_speed": 0.921,
+   "height": 1.656,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "sneak_side",
+   "cmu": "139_14",
+   "category": "locomotion",
+   "tags": [
+    "sneak sideways",
+    "side shuffle",
+    "strafe",
+    "edge along",
+    "sidle"
+   ],
+   "description": "sneaks sideways",
+   "frames": 78,
+   "duration": 2.567,
+   "end_disp": [
+    -3.532,
+    1.613
+   ],
+   "end_yaw": -0.026,
+   "avg_speed": 1.513,
+   "height": 1.604,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "march",
+   "cmu": "138_01",
+   "category": "locomotion",
+   "tags": [
+    "march",
+    "marching",
+    "soldier",
+    "military",
+    "parade",
+    "drill"
+   ],
+   "description": "marches like a soldier",
+   "frames": 74,
+   "duration": 2.433,
+   "end_disp": [
+    -0.122,
+    3.147
+   ],
+   "end_yaw": 0.078,
+   "avg_speed": 1.294,
+   "height": 1.977,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "zombie_lurch",
+   "cmu": "120_22",
+   "category": "locomotion",
+   "tags": [
+    "zombie",
+    "undead",
+    "lurch",
+    "ghoul",
+    "horde"
+   ],
+   "description": "lurches like a zombie",
+   "frames": 78,
+   "duration": 2.567,
+   "end_disp": [
+    -0.906,
+    2.255
+   ],
+   "end_yaw": -0.242,
+   "avg_speed": 0.947,
+   "height": 1.875,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "carry_walk",
+   "cmu": "111_36",
+   "category": "locomotion",
+   "tags": [
+    "carry",
+    "carrying",
+    "walk and carry",
+    "haul",
+    "transport",
+    "luggage",
+    "box",
+    "bag"
+   ],
+   "description": "walks carrying something in both arms",
+   "frames": 54,
+   "duration": 1.767,
+   "end_disp": [
+    0.114,
+    2.122
+   ],
+   "end_yaw": 0.044,
+   "avg_speed": 1.203,
+   "height": 1.777,
+   "source": "mocap",
+   "prop": "box",
+   "tier": 2
+  },
+  {
+   "id": "karate_punch",
+   "cmu": "135_09",
+   "category": "combat",
+   "tags": [
+    "lunge punch",
+    "straight punch",
+    "karate punch",
+    "reverse punch",
+    "martial arts",
+    "strike",
+    "attack"
+   ],
+   "description": "steps in with a karate lunge punch",
+   "frames": 60,
+   "duration": 1.967,
+   "end_disp": [
+    -0.136,
+    1.155
+   ],
+   "end_yaw": 0.949,
+   "avg_speed": 0.592,
+   "height": 1.711,
+   "source": "mocap",
+   "strike_yaw": -0.533,
+   "tier": 2
+  },
+  {
+   "id": "front_kick",
+   "cmu": "135_04",
+   "category": "combat",
+   "tags": [
+    "front kick",
+    "snap kick",
+    "kick",
+    "push kick",
+    "martial arts"
+   ],
+   "description": "throws a front kick",
+   "frames": 51,
+   "duration": 1.667,
+   "end_disp": [
+    -0.23,
+    1.343
+   ],
+   "end_yaw": 0.915,
+   "avg_speed": 0.818,
+   "height": 1.728,
+   "source": "mocap",
+   "strike_yaw": -0.421,
+   "tier": 2
+  },
+  {
+   "id": "roundhouse",
+   "cmu": "135_07",
+   "category": "combat",
+   "tags": [
+    "roundhouse",
+    "roundhouse kick",
+    "mawashi geri",
+    "turning kick",
+    "high kick"
+   ],
+   "description": "throws a roundhouse kick",
+   "frames": 60,
+   "duration": 1.967,
+   "end_disp": [
+    1.123,
+    0.254
+   ],
+   "end_yaw": -2.052,
+   "avg_speed": 0.586,
+   "height": 1.737,
+   "source": "mocap",
+   "strike_yaw": 1.111,
+   "tier": 2
+  },
+  {
+   "id": "side_kick",
+   "cmu": "135_11",
+   "category": "combat",
+   "tags": [
+    "side kick",
+    "yoko geri",
+    "sidekick",
+    "kick"
+   ],
+   "description": "throws a side kick",
+   "frames": 54,
+   "duration": 1.767,
+   "end_disp": [
+    -1.317,
+    -0.117
+   ],
+   "end_yaw": 0.054,
+   "avg_speed": 0.749,
+   "height": 1.633,
+   "source": "mocap",
+   "strike_yaw": -1.574,
+   "tier": 2
+  },
+  {
+   "id": "block_low",
+   "cmu": "135_05",
+   "category": "combat",
+   "tags": [
+    "low block",
+    "gedan barai",
+    "parry low",
+    "block"
+   ],
+   "description": "sweeps a low karate block",
+   "frames": 54,
+   "duration": 1.767,
+   "end_disp": [
+    -0.625,
+    0.999
+   ],
+   "end_yaw": 1.028,
+   "avg_speed": 0.667,
+   "height": 1.732,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "block_hand",
+   "cmu": "135_10",
+   "category": "combat",
+   "tags": [
+    "knife hand block",
+    "shuto uke",
+    "parry",
+    "block",
+    "deflect"
+   ],
+   "description": "deflects with a knife-hand block",
+   "frames": 54,
+   "duration": 1.767,
+   "end_disp": [
+    0.42,
+    0.853
+   ],
+   "end_yaw": -1.83,
+   "avg_speed": 0.538,
+   "height": 1.733,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "guard",
+   "cmu": "76_04",
+   "category": "combat",
+   "tags": [
+    "guard",
+    "defensive stance",
+    "defend",
+    "fighting stance",
+    "ready pose",
+    "on guard"
+   ],
+   "description": "holds a defensive guard",
+   "frames": 97,
+   "duration": 3.2,
+   "end_disp": [
+    -0.057,
+    -0.489
+   ],
+   "end_yaw": -0.153,
+   "avg_speed": 0.154,
+   "height": 1.599,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "evade",
+   "cmu": "76_03",
+   "category": "reaction",
+   "tags": [
+    "evade",
+    "avoid",
+    "dodge",
+    "sidestep",
+    "slip",
+    "weave",
+    "escape the attack"
+   ],
+   "description": "evades an attacker",
+   "frames": 60,
+   "duration": 1.967,
+   "end_disp": [
+    -0.119,
+    -0.581
+   ],
+   "end_yaw": 0.272,
+   "avg_speed": 0.301,
+   "height": 1.537,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "shoot_gun",
+   "cmu": "79_96",
+   "category": "combat",
+   "tags": [
+    "shoot",
+    "shoots",
+    "fire",
+    "gun",
+    "pistol",
+    "handgun",
+    "aim and fire",
+    "gunshot"
+   ],
+   "description": "aims and shoots a handgun",
+   "frames": 133,
+   "duration": 4.4,
+   "end_disp": [
+    -0.007,
+    0.004
+   ],
+   "end_yaw": 0.023,
+   "avg_speed": 0.002,
+   "height": 1.964,
+   "source": "mocap",
+   "weapon": "gun",
+   "tier": 2
+  },
+  {
+   "id": "shoot_rifle",
+   "cmu": "80_03",
+   "category": "combat",
+   "tags": [
+    "rifle",
+    "shoot rifle",
+    "long gun",
+    "shotgun",
+    "aim",
+    "fire"
+   ],
+   "description": "aims and fires a long gun",
+   "frames": 158,
+   "duration": 5.233,
+   "end_disp": [
+    -0.03,
+    -0.04
+   ],
+   "end_yaw": 0.062,
+   "avg_speed": 0.01,
+   "height": 1.88,
+   "source": "mocap",
+   "weapon": "rifle",
+   "tier": 2
+  },
+  {
+   "id": "draw_weapon",
+   "cmu": "139_05",
+   "category": "action",
+   "tags": [
+    "draw",
+    "draws",
+    "draw weapon",
+    "draws a gun",
+    "draws his gun",
+    "draws his sword",
+    "draw the sword",
+    "pull a gun",
+    "equip",
+    "equips",
+    "unholster",
+    "arm himself",
+    "take out weapon"
+   ],
+   "description": "draws a weapon from the hip",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    -0.052,
+    0.048
+   ],
+   "end_yaw": 0.05,
+   "avg_speed": 0.018,
+   "height": 1.713,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "holster",
+   "cmu": "139_05",
+   "category": "action",
+   "tags": [
+    "holster",
+    "holsters",
+    "holster gun",
+    "holsters his gun",
+    "holsters the gun",
+    "unequip",
+    "unequips",
+    "put away weapon",
+    "puts the gun away",
+    "sheathe",
+    "sheathes the sword",
+    "lower weapon"
+   ],
+   "description": "puts the weapon away",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.055,
+    -0.045
+   ],
+   "end_yaw": -0.05,
+   "avg_speed": 0.018,
+   "height": 1.713,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "shoot_bow",
+   "cmu": "79_86",
+   "category": "combat",
+   "tags": [
+    "bow",
+    "arrow",
+    "archer",
+    "archery",
+    "shoot an arrow",
+    "draw the bow",
+    "longbow"
+   ],
+   "description": "draws a bow and shoots an arrow",
+   "frames": 163,
+   "duration": 5.4,
+   "end_disp": [
+    0.003,
+    0.004
+   ],
+   "end_yaw": 0.034,
+   "avg_speed": 0.001,
+   "height": 1.99,
+   "source": "mocap",
+   "weapon": "bow",
+   "tier": 2
+  },
+  {
+   "id": "mace_smash",
+   "cmu": "79_01",
+   "category": "combat",
+   "tags": [
+    "mace",
+    "gadha",
+    "gada",
+    "club",
+    "hammer",
+    "overhead smash",
+    "axe",
+    "chop",
+    "two handed strike",
+    "finisher"
+   ],
+   "description": "swings a heavy two-handed overhead smash",
+   "frames": 140,
+   "duration": 4.633,
+   "end_disp": [
+    0.01,
+    0.009
+   ],
+   "end_yaw": 0.013,
+   "avg_speed": 0.003,
+   "height": 1.917,
+   "source": "mocap",
+   "weapon": "mace",
+   "strike_yaw": -0.24,
+   "tier": 2
+  },
+  {
+   "id": "sword_duel",
+   "cmu": "02_08",
+   "category": "combat",
+   "tags": [
+    "swordsman",
+    "second blade routine",
+    "slash",
+    "stab",
+    "blade combo"
+   ],
+   "description": "a second swordplay routine with slashes and stabs",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.049,
+    0.051
+   ],
+   "end_yaw": 0.26,
+   "avg_speed": 0.009,
+   "height": 1.882,
+   "source": "mocap",
+   "weapon": "sword",
+   "strike_yaw": -1.479,
+   "tier": 2
+  },
+  {
+   "id": "lie_down",
+   "cmu": "111_12",
+   "category": "pose",
+   "tags": [
+    "lie down",
+    "lay down",
+    "lie on back",
+    "rest on ground",
+    "collapse slowly",
+    "sleep"
+   ],
+   "description": "lies down on the ground",
+   "frames": 273,
+   "duration": 9.067,
+   "end_disp": [
+    0.396,
+    -0.012
+   ],
+   "end_yaw": -0.827,
+   "avg_speed": 0.044,
+   "height": 0.796,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "get_up_prone",
+   "cmu": "140_01",
+   "category": "reaction",
+   "tags": [
+    "get up from prone",
+    "get up face down",
+    "rise from the floor",
+    "push up from ground"
+   ],
+   "description": "gets up from lying face down",
+   "frames": 201,
+   "duration": 6.667,
+   "end_disp": [
+    0.119,
+    -1.089
+   ],
+   "end_yaw": 0.023,
+   "avg_speed": 0.164,
+   "height": 1.045,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "prone",
+   "cmu": "140_01",
+   "category": "pose",
+   "tags": [
+    "prone",
+    "go prone",
+    "goes prone",
+    "going prone",
+    "lie face down",
+    "lies face down",
+    "belly",
+    "drop prone",
+    "drops prone",
+    "take cover on the ground"
+   ],
+   "description": "lies down face down on the ground",
+   "frames": 201,
+   "duration": 6.667,
+   "end_disp": [
+    -0.144,
+    1.086
+   ],
+   "end_yaw": -0.023,
+   "avg_speed": 0.164,
+   "height": 1.045,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "kneel",
+   "cmu": "23_03",
+   "category": "pose",
+   "tags": [
+    "kneel",
+    "kneeling",
+    "kneels",
+    "on one knee",
+    "comfort",
+    "console"
+   ],
+   "description": "kneels down to comfort someone",
+   "frames": 126,
+   "duration": 4.167,
+   "end_disp": [
+    0.073,
+    0.25
+   ],
+   "end_yaw": 0.248,
+   "avg_speed": 0.062,
+   "height": 1.313,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "cower",
+   "cmu": "79_73",
+   "category": "emotion",
+   "tags": [
+    "cower",
+    "scared",
+    "afraid",
+    "terrified",
+    "shrink",
+    "flinch",
+    "fear",
+    "tremble"
+   ],
+   "description": "cowers in fear",
+   "frames": 215,
+   "duration": 7.133,
+   "end_disp": [
+    -0.002,
+    -0.015
+   ],
+   "end_yaw": -0.024,
+   "avg_speed": 0.002,
+   "height": 1.946,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "cower_low",
+   "cmu": "142_16",
+   "category": "emotion",
+   "tags": [
+    "cower low",
+    "crouch in fear",
+    "hide",
+    "shrink down",
+    "panic"
+   ],
+   "description": "crouches down, scared",
+   "frames": 75,
+   "duration": 2.467,
+   "end_disp": [
+    0.427,
+    1.535
+   ],
+   "end_yaw": -0.448,
+   "avg_speed": 0.646,
+   "height": 1.245,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "cheer",
+   "cmu": "79_69",
+   "category": "emotion",
+   "tags": [
+    "cheer",
+    "cheers",
+    "cheering",
+    "exclaim",
+    "exclaims",
+    "hooray",
+    "very happy",
+    "overjoyed",
+    "yay",
+    "rejoice",
+    "whoop"
+   ],
+   "description": "cheers, overjoyed",
+   "frames": 197,
+   "duration": 6.533,
+   "end_disp": [
+    -0.004,
+    0.008
+   ],
+   "end_yaw": 0.027,
+   "avg_speed": 0.001,
+   "height": 1.921,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "argue",
+   "cmu": "80_48",
+   "category": "emotion",
+   "tags": [
+    "argue",
+    "argues",
+    "arguing",
+    "argument",
+    "gesticulate",
+    "gesticulates",
+    "dispute",
+    "debate",
+    "complain",
+    "rant",
+    "bicker"
+   ],
+   "description": "argues with big gestures",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    -0.024,
+    0.018
+   ],
+   "end_yaw": 0.133,
+   "avg_speed": 0.004,
+   "height": 1.868,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "point",
+   "cmu": "139_25",
+   "category": "social",
+   "tags": [
+    "point",
+    "give directions",
+    "show the way",
+    "indicate",
+    "gesture toward",
+    "over there"
+   ],
+   "description": "points and gives directions",
+   "frames": 159,
+   "duration": 5.267,
+   "end_disp": [
+    -0.51,
+    0.885
+   ],
+   "end_yaw": -0.59,
+   "avg_speed": 0.194,
+   "height": 1.59,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "stumble",
+   "cmu": "104_13",
+   "category": "reaction",
+   "tags": [
+    "stumble",
+    "stagger",
+    "trip",
+    "lose balance",
+    "wobble"
+   ],
+   "description": "stumbles forward, losing balance",
+   "frames": 131,
+   "duration": 4.333,
+   "end_disp": [
+    -0.149,
+    5.934
+   ],
+   "end_yaw": -0.399,
+   "avg_speed": 1.37,
+   "height": 1.787,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "look_around",
+   "cmu": "139_01",
+   "category": "action",
+   "tags": [
+    "look around",
+    "scan",
+    "search",
+    "survey",
+    "watch",
+    "lookout"
+   ],
+   "description": "looks around carefully",
+   "frames": 240,
+   "duration": 7.967,
+   "end_disp": [
+    0.008,
+    -0.075
+   ],
+   "end_yaw": -0.937,
+   "avg_speed": 0.009,
+   "height": 1.437,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "sit_chair",
+   "cmu": "114_05",
+   "category": "pose",
+   "tags": [
+    "sit on chair",
+    "seated",
+    "sit in chair",
+    "sitting",
+    "take a seat"
+   ],
+   "description": "sits in a chair",
+   "frames": 180,
+   "duration": 5.967,
+   "end_disp": [
+    0.045,
+    0.018
+   ],
+   "end_yaw": -0.152,
+   "avg_speed": 0.008,
+   "height": 1.432,
+   "source": "mocap",
+   "prop": "chair",
+   "tier": 2
+  },
+  {
+   "id": "stand_up",
+   "cmu": "111_09",
+   "category": "pose",
+   "tags": [
+    "stand up",
+    "stands up",
+    "standing up",
+    "get up from chair",
+    "gets up from the chair",
+    "rise",
+    "get to feet",
+    "stand",
+    "stands"
+   ],
+   "description": "gets up from a chair",
+   "frames": 90,
+   "duration": 2.967,
+   "end_disp": [
+    0.22,
+    0.554
+   ],
+   "end_yaw": -0.097,
+   "avg_speed": 0.201,
+   "height": 1.765,
+   "source": "mocap",
+   "prop": "chair",
+   "tier": 2
+  },
+  {
+   "id": "pick_carry_place",
+   "cmu": "69_70",
+   "category": "work",
+   "tags": [
+    "pick up and set down",
+    "move object",
+    "transfer",
+    "relocate",
+    "carry and place",
+    "load",
+    "unload"
+   ],
+   "description": "squats, picks up an object, carries it and sets it down",
+   "frames": 213,
+   "duration": 7.067,
+   "end_disp": [
+    -0.869,
+    -0.192
+   ],
+   "end_yaw": -1.482,
+   "avg_speed": 0.126,
+   "height": 1.86,
+   "source": "mocap",
+   "prop": "box",
+   "tier": 2
+  },
+  {
+   "id": "lift_heavy",
+   "cmu": "137_40",
+   "category": "work",
+   "tags": [
+    "lift heavy",
+    "heavy lift",
+    "luggage",
+    "suitcase",
+    "deadlift",
+    "heave",
+    "weight",
+    "strong man"
+   ],
+   "description": "lifts something heavy off the floor",
+   "frames": 150,
+   "duration": 4.967,
+   "end_disp": [
+    -0.008,
+    -0.001
+   ],
+   "end_yaw": 0.099,
+   "avg_speed": 0.002,
+   "height": 1.537,
+   "source": "mocap",
+   "prop": "box",
+   "tier": 2
+  },
+  {
+   "id": "ride",
+   "cmu": "111_15",
+   "category": "pose",
+   "tags": [
+    "ride",
+    "riding",
+    "horseback",
+    "mounted",
+    "on horseback",
+    "ride a horse"
+   ],
+   "description": "sits astride, riding",
+   "frames": 60,
+   "duration": 1.967,
+   "end_disp": [
+    -0.007,
+    -0.011
+   ],
+   "end_yaw": -0.004,
+   "avg_speed": 0.007,
+   "height": 1.607,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "sit_down",
+   "cmu": "111_09",
+   "category": "pose",
+   "tags": [
+    "sit down",
+    "take a seat",
+    "sit on a chair",
+    "be seated",
+    "sits"
+   ],
+   "description": "sits down on a chair",
+   "frames": 90,
+   "duration": 2.967,
+   "end_disp": [
+    -0.273,
+    -0.53
+   ],
+   "end_yaw": 0.097,
+   "avg_speed": 0.201,
+   "height": 1.765,
+   "source": "mocap",
+   "prop": "chair",
+   "tier": 2
+  },
+  {
+   "id": "hit_react",
+   "cmu": "keyframed:hit_react",
+   "category": "reaction",
+   "tags": [
+    "hit reaction",
+    "get hit",
+    "is hit",
+    "take a hit",
+    "struck",
+    "recoil",
+    "react to hit",
+    "punched in the face",
+    "flinch back",
+    "gets hit"
+   ],
+   "description": "recoils from a blow to the head and steps back",
+   "frames": 43,
+   "duration": 1.4,
+   "end_disp": [
+    0.0,
+    -0.36
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.257,
+   "height": 1.766,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "hit_gut",
+   "cmu": "keyframed:hit_gut",
+   "category": "reaction",
+   "tags": [
+    "hit in the stomach",
+    "gut punch",
+    "doubled over",
+    "winded",
+    "body blow",
+    "gets punched in the gut"
+   ],
+   "description": "doubles over from a blow to the stomach",
+   "frames": 49,
+   "duration": 1.6,
+   "end_disp": [
+    0.0,
+    -0.2
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.125,
+   "height": 1.653,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "block",
+   "cmu": "keyframed:block",
+   "category": "combat",
+   "tags": [
+    "block",
+    "blocks",
+    "blocking",
+    "blocked",
+    "block the punch",
+    "blocks the punch",
+    "block the blow",
+    "blocks the blow",
+    "block the attack",
+    "guard up",
+    "cover up",
+    "parry the blow",
+    "shield face",
+    "defend against"
+   ],
+   "description": "raises both forearms to block a blow",
+   "frames": 43,
+   "duration": 1.4,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.728,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "nod",
+   "cmu": "keyframed:nod",
+   "category": "idle",
+   "tags": [
+    "nod",
+    "nods",
+    "listen",
+    "listening",
+    "agree",
+    "acknowledge",
+    "yes",
+    "attentive",
+    "engaged"
+   ],
+   "description": "listens and nods",
+   "frames": 91,
+   "duration": 3.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.827,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "crouch",
+   "cmu": "keyframed:crouch",
+   "category": "pose",
+   "tags": [
+    "crouch",
+    "crouches",
+    "crouching",
+    "squat down",
+    "get low",
+    "hunker down",
+    "take cover",
+    "takes cover",
+    "hide behind",
+    "duck down and wait"
+   ],
+   "description": "crouches low",
+   "frames": 91,
+   "duration": 3.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.33,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "push_button",
+   "cmu": "keyframed:push_button",
+   "category": "action",
+   "tags": [
+    "push button",
+    "press button",
+    "press the button",
+    "hit the switch",
+    "ring the bell",
+    "elevator",
+    "keypad",
+    "doorbell"
+   ],
+   "description": "reaches out and presses a button",
+   "frames": 61,
+   "duration": 2.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.827,
+   "source": "keyframed",
+   "prop": "button",
+   "tier": 2
+  },
+  {
+   "id": "open_door",
+   "cmu": "keyframed:open_door",
+   "category": "action",
+   "tags": [
+    "open door",
+    "opens the door",
+    "open the door",
+    "pull the door open",
+    "door handle",
+    "open"
+   ],
+   "description": "pulls a door open",
+   "frames": 79,
+   "duration": 2.6,
+   "end_disp": [
+    0.05,
+    -0.12
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.05,
+   "height": 1.826,
+   "source": "keyframed",
+   "prop": "door",
+   "tier": 2
+  },
+  {
+   "id": "salute",
+   "cmu": "keyframed:salute",
+   "category": "social",
+   "tags": [
+    "salute",
+    "salutes",
+    "military salute",
+    "respect",
+    "acknowledge commander"
+   ],
+   "description": "gives a salute",
+   "frames": 61,
+   "duration": 2.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.826,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "clap",
+   "cmu": "keyframed:clap",
+   "category": "social",
+   "tags": [
+    "clap",
+    "clapping",
+    "applaud",
+    "applause",
+    "cheer on"
+   ],
+   "description": "claps",
+   "frames": 91,
+   "duration": 3.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.825,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "point_at",
+   "cmu": "keyframed:point_at",
+   "category": "social",
+   "tags": [
+    "point at",
+    "points at",
+    "point",
+    "point ahead",
+    "indicate",
+    "accuse",
+    "show"
+   ],
+   "description": "points straight ahead",
+   "frames": 64,
+   "duration": 2.1,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.825,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "dog_idle",
+   "cmu": "keyframed:quadruped:dog:idle",
+   "category": "idle",
+   "tags": [
+    "stand",
+    "wait",
+    "idle",
+    "stay",
+    "look around",
+    "sniff",
+    "guard"
+   ],
+   "description": "dog stands and looks around",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.642,
+   "source": "keyframed",
+   "kind": "dog",
+   "tier": 2
+  },
+  {
+   "id": "dog_walk",
+   "cmu": "keyframed:quadruped:dog:walk:2",
+   "category": "locomotion",
+   "tags": [
+    "walk",
+    "walks",
+    "trot",
+    "pad",
+    "approach",
+    "follow",
+    "move",
+    "go"
+   ],
+   "description": "dog walks",
+   "frames": 41,
+   "duration": 1.333,
+   "end_disp": [
+    0.0,
+    1.333
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 1.0,
+   "height": 0.646,
+   "source": "keyframed",
+   "kind": "dog",
+   "tier": 2
+  },
+  {
+   "id": "dog_run",
+   "cmu": "keyframed:quadruped:dog:gallop:3",
+   "category": "locomotion",
+   "tags": [
+    "run",
+    "runs",
+    "sprint",
+    "chase",
+    "charge",
+    "race",
+    "dash",
+    "bound",
+    "flee",
+    "fast"
+   ],
+   "description": "dog runs at a gallop",
+   "frames": 37,
+   "duration": 1.2,
+   "end_disp": [
+    0.0,
+    7.2
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 6.0,
+   "height": 0.662,
+   "source": "keyframed",
+   "kind": "dog",
+   "tier": 2
+  },
+  {
+   "id": "dog_sit",
+   "cmu": "keyframed:quadruped:dog:sit",
+   "category": "pose",
+   "tags": [
+    "sit",
+    "sits",
+    "sit down",
+    "wait",
+    "stay",
+    "beg"
+   ],
+   "description": "dog sits",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.67,
+   "source": "keyframed",
+   "kind": "dog",
+   "tier": 2
+  },
+  {
+   "id": "dog_attack",
+   "cmu": "keyframed:dog_lunge",
+   "category": "combat",
+   "tags": [
+    "attack",
+    "bite",
+    "lunge",
+    "snap",
+    "bark",
+    "growl",
+    "pounce",
+    "jump at",
+    "maul"
+   ],
+   "description": "dog lunges and snaps",
+   "frames": 49,
+   "duration": 1.6,
+   "end_disp": [
+    0.0,
+    0.21
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.131,
+   "height": 0.623,
+   "source": "keyframed",
+   "kind": "dog",
+   "tier": 2
+  },
+  {
+   "id": "horse_idle",
+   "cmu": "keyframed:quadruped:horse:idle",
+   "category": "idle",
+   "tags": [
+    "stand",
+    "wait",
+    "idle",
+    "graze",
+    "rest",
+    "look around"
+   ],
+   "description": "horse stands and looks around",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.74,
+   "source": "keyframed",
+   "kind": "horse",
+   "tier": 2
+  },
+  {
+   "id": "horse_walk",
+   "cmu": "keyframed:quadruped:horse:walk:2",
+   "category": "locomotion",
+   "tags": [
+    "walk",
+    "walks",
+    "approach",
+    "move",
+    "go",
+    "amble",
+    "follow"
+   ],
+   "description": "horse walks",
+   "frames": 65,
+   "duration": 2.133,
+   "end_disp": [
+    0.0,
+    3.413
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 1.6,
+   "height": 1.744,
+   "source": "keyframed",
+   "kind": "horse",
+   "tier": 2
+  },
+  {
+   "id": "horse_trot",
+   "cmu": "keyframed:quadruped:horse:trot:3",
+   "category": "locomotion",
+   "tags": [
+    "trot",
+    "trots",
+    "jog",
+    "canter",
+    "medium speed"
+   ],
+   "description": "horse trots",
+   "frames": 67,
+   "duration": 2.2,
+   "end_disp": [
+    0.0,
+    7.92
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 3.6,
+   "height": 1.741,
+   "source": "keyframed",
+   "kind": "horse",
+   "tier": 2
+  },
+  {
+   "id": "horse_gallop",
+   "cmu": "keyframed:quadruped:horse:gallop:4",
+   "category": "locomotion",
+   "tags": [
+    "gallop",
+    "gallops",
+    "run",
+    "runs",
+    "charge",
+    "race",
+    "sprint",
+    "flee",
+    "fast"
+   ],
+   "description": "horse gallops",
+   "frames": 65,
+   "duration": 2.133,
+   "end_disp": [
+    0.0,
+    19.2
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 9.0,
+   "height": 1.786,
+   "source": "keyframed",
+   "kind": "horse",
+   "tier": 2
+  },
+  {
+   "id": "set_down_heavy",
+   "cmu": "137_40",
+   "category": "work",
+   "tags": [
+    "set down",
+    "put down",
+    "place",
+    "lower the load",
+    "unload",
+    "stow"
+   ],
+   "description": "lowers something heavy and sets it down",
+   "frames": 150,
+   "duration": 4.967,
+   "end_disp": [
+    0.007,
+    0.002
+   ],
+   "end_yaw": -0.099,
+   "avg_speed": 0.002,
+   "height": 1.537,
+   "source": "mocap",
+   "prop": "box",
+   "tier": 2
+  },
+  {
+   "id": "walk_side_r",
+   "cmu": "143_40",
+   "category": "locomotion",
+   "tags": [
+    "strafe right",
+    "sidestep right",
+    "side step right"
+   ],
+   "description": "walks sideways to the right, side-stepping",
+   "frames": 82,
+   "duration": 2.7,
+   "end_disp": [
+    -2.246,
+    -1.097
+   ],
+   "end_yaw": -0.009,
+   "avg_speed": 0.926,
+   "height": 1.624,
+   "source": "mocap",
+   "tier": 2
+  },
+  {
+   "id": "push_off",
+   "cmu": "keyframed:run_start",
+   "category": "action",
+   "tags": [
+    "burst into a run",
+    "take off running",
+    "push off",
+    "start running",
+    "sprint off"
+   ],
+   "description": "pushes off from a standstill into a run",
+   "frames": 19,
+   "duration": 0.6,
+   "end_disp": [
+    0.0,
+    0.8
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 1.333,
+   "height": 1.732,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "brake",
+   "cmu": "keyframed:brake",
+   "category": "action",
+   "tags": [
+    "skid to a stop",
+    "brake",
+    "plant feet",
+    "stop running",
+    "halt",
+    "pull up"
+   ],
+   "description": "plants the feet and brakes out of a run",
+   "frames": 25,
+   "duration": 0.8,
+   "end_disp": [
+    0.0,
+    0.7
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.875,
+   "height": 1.75,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "turn_l90",
+   "cmu": "keyframed:turn:90",
+   "category": "action",
+   "tags": [
+    "turn left",
+    "pivot left",
+    "quarter turn left"
+   ],
+   "description": "pivots 90 degrees to the left",
+   "frames": 19,
+   "duration": 0.6,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 1.502,
+   "avg_speed": 0.0,
+   "height": 1.804,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "turn_r90",
+   "cmu": "keyframed:turn:-90",
+   "category": "action",
+   "tags": [
+    "turn right",
+    "pivot right",
+    "quarter turn right"
+   ],
+   "description": "pivots 90 degrees to the right",
+   "frames": 19,
+   "duration": 0.6,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": -1.502,
+   "avg_speed": 0.0,
+   "height": 1.804,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "turn_l135",
+   "cmu": "keyframed:turn:135",
+   "category": "action",
+   "tags": [
+    "turn_l135"
+   ],
+   "description": "pivots 135 degrees to the left",
+   "frames": 27,
+   "duration": 0.867,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 2.303,
+   "avg_speed": 0.0,
+   "height": 1.803,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "turn_r135",
+   "cmu": "keyframed:turn:-135",
+   "category": "action",
+   "tags": [
+    "turn_r135"
+   ],
+   "description": "pivots 135 degrees to the right",
+   "frames": 27,
+   "duration": 0.867,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": -2.303,
+   "avg_speed": 0.0,
+   "height": 1.803,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "turn_180",
+   "cmu": "keyframed:turn:180",
+   "category": "action",
+   "tags": [
+    "turn around",
+    "about face",
+    "spin around",
+    "turn back",
+    "pivot around"
+   ],
+   "description": "pivots all the way around",
+   "frames": 27,
+   "duration": 0.867,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 3.071,
+   "avg_speed": 0.0,
+   "height": 1.803,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "bump",
+   "cmu": "keyframed:bump",
+   "category": "reaction",
+   "tags": [
+    "bump into",
+    "walk into a wall",
+    "collide",
+    "run into",
+    "bounce off"
+   ],
+   "description": "walks into something solid and recoils",
+   "frames": 31,
+   "duration": 1.0,
+   "end_disp": [
+    0.0,
+    -0.16
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.16,
+   "height": 1.804,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "startle",
+   "cmu": "keyframed:startle",
+   "category": "reaction",
+   "tags": [
+    "startle",
+    "startled",
+    "jump at a sound",
+    "spooked",
+    "hear a noise",
+    "flinch at a sound",
+    "jumpy"
+   ],
+   "description": "flinches at a sudden sound and turns to it",
+   "frames": 43,
+   "duration": 1.4,
+   "end_disp": [
+    0.0,
+    -0.14
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.1,
+   "height": 1.724,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "step_over",
+   "cmu": "keyframed:step_over",
+   "category": "action",
+   "tags": [
+    "step over",
+    "step over the curb",
+    "climb over a low",
+    "stride over",
+    "hop over an obstacle"
+   ],
+   "description": "steps carefully over a low curb",
+   "frames": 58,
+   "duration": 1.9,
+   "end_disp": [
+    0.0,
+    1.5
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.789,
+   "height": 1.832,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "duck_under",
+   "cmu": "keyframed:duck_under",
+   "category": "action",
+   "tags": [
+    "stoop under",
+    "stoop beneath",
+    "low ceiling",
+    "low beam",
+    "low pipe"
+   ],
+   "description": "stoops beneath a low beam and comes up on the far side",
+   "frames": 73,
+   "duration": 2.4,
+   "end_disp": [
+    0.0,
+    2.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.833,
+   "height": 1.334,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "squeeze",
+   "cmu": "keyframed:squeeze",
+   "category": "action",
+   "tags": [
+    "squeeze through",
+    "shuffle through a gap",
+    "narrow gap",
+    "slip through",
+    "edge through"
+   ],
+   "description": "squeezes sideways through a narrow gap",
+   "frames": 67,
+   "duration": 2.2,
+   "end_disp": [
+    1.6,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.727,
+   "height": 1.795,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "collapse",
+   "cmu": "keyframed:collapse",
+   "category": "reaction",
+   "tags": [
+    "faint",
+    "faints",
+    "pass out",
+    "passes out",
+    "swoon",
+    "collapse",
+    "collapses",
+    "crumple",
+    "keel over",
+    "drop dead",
+    "dies"
+   ],
+   "description": "knees buckle and the body folds to the floor",
+   "frames": 79,
+   "duration": 2.6,
+   "end_disp": [
+    0.0,
+    -0.3
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.115,
+   "height": 1.108,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "down_still_fall_back",
+   "cmu": "keyframed:down:fall_back:still",
+   "category": "idle",
+   "tags": [
+    "lie still",
+    "play dead",
+    "lying motionless",
+    "unconscious",
+    "out cold"
+   ],
+   "description": "lies still on the ground, breathing",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.018,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "down_groan_fall_back",
+   "cmu": "keyframed:down:fall_back:groan",
+   "category": "idle",
+   "tags": [
+    "groan on the ground",
+    "writhe",
+    "injured on the ground",
+    "moan",
+    "clutch stomach"
+   ],
+   "description": "groans on the ground, a knee drawn up",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.017,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "down_still_fall_face",
+   "cmu": "keyframed:down:fall_face:still",
+   "category": "idle",
+   "tags": [
+    "down_still_fall_face"
+   ],
+   "description": "lies still on the ground, breathing",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    -0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.275,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "down_groan_fall_face",
+   "cmu": "keyframed:down:fall_face:groan",
+   "category": "idle",
+   "tags": [
+    "down_groan_fall_face"
+   ],
+   "description": "groans on the ground, a knee drawn up",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    -0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.271,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "down_still_lie_down",
+   "cmu": "keyframed:down:lie_down:still",
+   "category": "idle",
+   "tags": [
+    "down_still_lie_down"
+   ],
+   "description": "lies still on the ground, breathing",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.036,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "down_groan_lie_down",
+   "cmu": "keyframed:down:lie_down:groan",
+   "category": "idle",
+   "tags": [
+    "down_groan_lie_down"
+   ],
+   "description": "groans on the ground, a knee drawn up",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.036,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "down_still_prone",
+   "cmu": "keyframed:down:prone:still",
+   "category": "idle",
+   "tags": [
+    "down_still_prone"
+   ],
+   "description": "lies still on the ground, breathing",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.093,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "down_groan_prone",
+   "cmu": "keyframed:down:prone:groan",
+   "category": "idle",
+   "tags": [
+    "down_groan_prone"
+   ],
+   "description": "groans on the ground, a knee drawn up",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.093,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "down_still_collapse",
+   "cmu": "keyframed:down:collapse:still",
+   "category": "idle",
+   "tags": [
+    "down_still_collapse"
+   ],
+   "description": "lies still on the ground, breathing",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.409,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "down_groan_collapse",
+   "cmu": "keyframed:down:collapse:groan",
+   "category": "idle",
+   "tags": [
+    "down_groan_collapse"
+   ],
+   "description": "groans on the ground, a knee drawn up",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.406,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "crawl_fall_face",
+   "cmu": "keyframed:down:fall_face:crawl",
+   "category": "locomotion",
+   "tags": [
+    "crawl_fall_face"
+   ],
+   "description": "crawls slowly forward on the belly",
+   "frames": 73,
+   "duration": 2.4,
+   "end_disp": [
+    -0.01,
+    0.5
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.208,
+   "height": 0.315,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "crawl_prone",
+   "cmu": "keyframed:down:prone:crawl",
+   "category": "locomotion",
+   "tags": [
+    "crawl",
+    "crawls",
+    "crawling",
+    "crawl slowly",
+    "drag yourself",
+    "army crawl"
+   ],
+   "description": "crawls slowly forward on the belly",
+   "frames": 73,
+   "duration": 2.4,
+   "end_disp": [
+    -0.025,
+    0.499
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.208,
+   "height": 0.133,
+   "source": "keyframed",
+   "tier": 2
+  },
+  {
+   "id": "idle_phone",
+   "cmu": "keyframed:idle_phone",
+   "category": "idle",
+   "tags": [
+    "check phone",
+    "looks at phone",
+    "texting",
+    "scroll phone",
+    "on the phone",
+    "phone"
+   ],
+   "description": "looks down at a phone, thumb scrolling",
+   "frames": 181,
+   "duration": 6.0,
+   "end_disp": [
+    -0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.79,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "idle_watch",
+   "cmu": "keyframed:idle_watch",
+   "category": "idle",
+   "tags": [
+    "check watch",
+    "checks the time",
+    "look at watch",
+    "glance at watch",
+    "impatient wait"
+   ],
+   "description": "checks a wristwatch",
+   "frames": 136,
+   "duration": 4.5,
+   "end_disp": [
+    -0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.816,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "idle_arms_crossed",
+   "cmu": "keyframed:idle_arms_crossed",
+   "category": "idle",
+   "tags": [
+    "arms crossed",
+    "cross arms",
+    "folds arms",
+    "crossed arms",
+    "lean back skeptical"
+   ],
+   "description": "stands with arms crossed, shifting weight",
+   "frames": 181,
+   "duration": 6.0,
+   "end_disp": [
+    -0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.819,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "idle_shift",
+   "cmu": "keyframed:idle_shift",
+   "category": "idle",
+   "tags": [
+    "loiter",
+    "hang around",
+    "shift weight",
+    "wallflower",
+    "stand around",
+    "background idle"
+   ],
+   "description": "shifts weight from foot to foot and glances around",
+   "frames": 181,
+   "duration": 6.0,
+   "end_disp": [
+    -0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.81,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "chat_a",
+   "cmu": "keyframed:chat_a",
+   "category": "social",
+   "tags": [
+    "chat",
+    "chatting",
+    "converse",
+    "small talk",
+    "talking",
+    "gossip"
+   ],
+   "description": "chats: talks with gestures, then listens and nods",
+   "frames": 241,
+   "duration": 8.0,
+   "end_disp": [
+    -0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.819,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "chat_b",
+   "cmu": "keyframed:chat_b",
+   "category": "social",
+   "tags": [
+    "chat_b"
+   ],
+   "description": "chats: listens and nods, then talks with gestures",
+   "frames": 241,
+   "duration": 8.0,
+   "end_disp": [
+    -0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.819,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "wipe_counter",
+   "cmu": "keyframed:wipe_counter",
+   "category": "work",
+   "tags": [
+    "wipe",
+    "wipe counter",
+    "wipes the counter",
+    "clean table",
+    "wipe down"
+   ],
+   "description": "wipes a counter in circles",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.743,
+   "source": "keyframed",
+   "prop": "counter",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "type_laptop",
+   "cmu": "keyframed:type_laptop",
+   "category": "work",
+   "tags": [
+    "type",
+    "typing",
+    "laptop",
+    "computer",
+    "keyboard",
+    "work at desk",
+    "type on laptop"
+   ],
+   "description": "sits typing on a laptop",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.348,
+   "source": "keyframed",
+   "prop": "desk",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "read_book",
+   "cmu": "keyframed:read_book",
+   "category": "daily",
+   "tags": [
+    "read",
+    "reads",
+    "reading",
+    "read a book",
+    "book",
+    "novel"
+   ],
+   "description": "reads a book, turning a page",
+   "frames": 181,
+   "duration": 6.0,
+   "end_disp": [
+    -0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.793,
+   "source": "keyframed",
+   "prop": "book",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "sing",
+   "cmu": "keyframed:sing",
+   "category": "social",
+   "tags": [
+    "sing",
+    "sings",
+    "singing",
+    "singer",
+    "song",
+    "serenade",
+    "perform a song",
+    "karaoke"
+   ],
+   "description": "sings with a hand on the heart and the other sweeping out",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    -0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.816,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "think",
+   "cmu": "keyframed:think",
+   "category": "emotion",
+   "tags": [
+    "think",
+    "thinks",
+    "thinking",
+    "ponder",
+    "rub chin",
+    "consider",
+    "contemplate",
+    "tap foot",
+    "puzzled"
+   ],
+   "description": "thinks: rubs the chin, taps a foot",
+   "frames": 181,
+   "duration": 6.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.816,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "pace_circle",
+   "cmu": "keyframed:pace_circle",
+   "category": "locomotion",
+   "tags": [
+    "pace in a circle",
+    "walk in a small circle",
+    "circle pacing"
+   ],
+   "description": "paces a small circle while thinking",
+   "frames": 217,
+   "duration": 7.2,
+   "end_disp": [
+    0.0,
+    -0.0
+   ],
+   "end_yaw": -0.116,
+   "avg_speed": 0.0,
+   "height": 1.802,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "flinch_shield",
+   "cmu": "keyframed:flinch_shield",
+   "category": "reaction",
+   "tags": [
+    "shield face",
+    "cover face",
+    "flinch from explosion",
+    "brace",
+    "shield",
+    "cower from blast"
+   ],
+   "description": "throws the arms up to shield the face",
+   "frames": 52,
+   "duration": 1.7,
+   "end_disp": [
+    0.0,
+    -0.03
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.018,
+   "height": 1.534,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "exhausted",
+   "cmu": "keyframed:exhausted",
+   "category": "emotion",
+   "tags": [
+    "exhausted",
+    "catch breath",
+    "hands on knees",
+    "out of breath",
+    "winded",
+    "panting",
+    "tired out"
+   ],
+   "description": "bent over, hands on knees, chest heaving",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.368,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "wipe_sweat",
+   "cmu": "keyframed:wipe_sweat",
+   "category": "emotion",
+   "tags": [
+    "wipe sweat",
+    "wipes forehead",
+    "mop brow",
+    "hot",
+    "sweaty"
+   ],
+   "description": "wipes sweat from the forehead",
+   "frames": 79,
+   "duration": 2.6,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.816,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "wake_up",
+   "cmu": "keyframed:wake_up",
+   "category": "pose",
+   "tags": [
+    "wake up",
+    "wakes up",
+    "come to",
+    "comes to",
+    "recover",
+    "regain consciousness",
+    "groggy",
+    "get up slowly"
+   ],
+   "description": "comes round on the floor and gets up groggily",
+   "frames": 169,
+   "duration": 5.6,
+   "end_disp": [
+    0.0,
+    0.3
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.054,
+   "height": 1.206,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "tpose",
+   "cmu": "keyframed:calib_pose:t",
+   "category": "pose",
+   "tags": [
+    "t-pose",
+    "t pose",
+    "tpose",
+    "calibration",
+    "calibrate",
+    "reset pose"
+   ],
+   "description": "calibration T-pose",
+   "frames": 61,
+   "duration": 2.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.819,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "apose",
+   "cmu": "keyframed:calib_pose:a",
+   "category": "pose",
+   "tags": [
+    "a-pose",
+    "a pose",
+    "apose",
+    "bind pose",
+    "neutral pose"
+   ],
+   "description": "calibration A-pose",
+   "frames": 61,
+   "duration": 2.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.819,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "standin_turn",
+   "cmu": "keyframed:standin_turn",
+   "category": "idle",
+   "tags": [
+    "stand-in",
+    "stand in",
+    "lighting check",
+    "turntable",
+    "silhouette"
+   ],
+   "description": "stand-in turning slowly for a lighting check",
+   "frames": 241,
+   "duration": 8.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": -0.105,
+   "avg_speed": 0.0,
+   "height": 1.819,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "scale_ref",
+   "cmu": "keyframed:scale_ref",
+   "category": "pose",
+   "tags": [
+    "scale reference",
+    "height reference",
+    "for scale",
+    "arms out",
+    "measure"
+   ],
+   "description": "rigid stance with arms out as a scale reference",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.819,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "eyeline_sweep",
+   "cmu": "keyframed:eyeline_sweep",
+   "category": "pose",
+   "tags": [
+    "eyeline",
+    "eye-line",
+    "eye line calibration",
+    "sightline",
+    "line of sight"
+   ],
+   "description": "mechanical head pan to calibrate the eye-line",
+   "frames": 271,
+   "duration": 9.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.819,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "settle",
+   "cmu": "keyframed:settle",
+   "category": "action",
+   "tags": [
+    "settle"
+   ],
+   "description": "feet re-plant into a square stance",
+   "frames": 19,
+   "duration": 0.6,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.819,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "wind_down",
+   "cmu": "keyframed:wind_down",
+   "category": "action",
+   "tags": [
+    "wind down",
+    "catch my breath",
+    "breathing settles",
+    "recover breath"
+   ],
+   "description": "breathing slows back to normal",
+   "frames": 241,
+   "duration": 8.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.803,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "stagger_back",
+   "cmu": "keyframed:stagger:back",
+   "category": "reaction",
+   "tags": [
+    "stagger",
+    "staggers",
+    "pushed",
+    "shoved",
+    "knocked off balance",
+    "regain balance"
+   ],
+   "description": "is shoved and staggers back, catching their balance",
+   "frames": 49,
+   "duration": 1.6,
+   "end_disp": [
+    0.0,
+    -0.72
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.45,
+   "height": 1.813,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "stagger_forward",
+   "cmu": "keyframed:stagger:forward",
+   "category": "reaction",
+   "tags": [
+    "stagger_forward"
+   ],
+   "description": "is shoved and staggers forward, catching their balance",
+   "frames": 49,
+   "duration": 1.6,
+   "end_disp": [
+    0.0,
+    0.72
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.45,
+   "height": 1.818,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "stagger_left",
+   "cmu": "keyframed:stagger:left",
+   "category": "reaction",
+   "tags": [
+    "stagger_left"
+   ],
+   "description": "is shoved and staggers left, catching their balance",
+   "frames": 49,
+   "duration": 1.6,
+   "end_disp": [
+    0.72,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.45,
+   "height": 1.818,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "stagger_right",
+   "cmu": "keyframed:stagger:right",
+   "category": "reaction",
+   "tags": [
+    "stagger_right"
+   ],
+   "description": "is shoved and staggers right, catching their balance",
+   "frames": 49,
+   "duration": 1.6,
+   "end_disp": [
+    -0.72,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.45,
+   "height": 1.818,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "leap_roll",
+   "cmu": "keyframed:leap_roll",
+   "category": "acrobatic",
+   "tags": [
+    "leap of faith",
+    "dive roll",
+    "diving roll",
+    "leap and roll",
+    "dive forward"
+   ],
+   "description": "running dive into a forward roll",
+   "frames": 85,
+   "duration": 2.8,
+   "end_disp": [
+    0.0,
+    4.6
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 1.643,
+   "height": 1.137,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "high_fall",
+   "cmu": "keyframed:high_fall",
+   "category": "acrobatic",
+   "tags": [
+    "high fall",
+    "fall from height",
+    "drop from a roof",
+    "jump down",
+    "stunt fall"
+   ],
+   "description": "falls in from height, lands hard and rolls",
+   "frames": 85,
+   "duration": 2.8,
+   "end_disp": [
+    0.0,
+    1.8
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.643,
+   "height": 1.261,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "blast_back",
+   "cmu": "keyframed:blast_back",
+   "category": "reaction",
+   "tags": [
+    "blast",
+    "blown back",
+    "blown away",
+    "explosion",
+    "shockwave",
+    "thrown back"
+   ],
+   "description": "flung backwards by a blast",
+   "frames": 91,
+   "duration": 3.0,
+   "end_disp": [
+    0.0,
+    -4.3
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 1.433,
+   "height": 0.336,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "eject_roll",
+   "cmu": "keyframed:eject_roll",
+   "category": "acrobatic",
+   "tags": [
+    "jump out of the car",
+    "bail out",
+    "eject",
+    "dive out"
+   ],
+   "description": "bails out of a moving vehicle and rolls",
+   "frames": 82,
+   "duration": 2.7,
+   "end_disp": [
+    2.2,
+    4.2
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 1.756,
+   "height": 0.811,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "drive_steer",
+   "cmu": "keyframed:drive_steer",
+   "category": "idle",
+   "tags": [
+    "drive",
+    "drives",
+    "driving",
+    "steer",
+    "behind the wheel"
+   ],
+   "description": "seated driver at the wheel",
+   "frames": 151,
+   "duration": 5.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.378,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "passenger_idle",
+   "cmu": "keyframed:passenger_idle",
+   "category": "idle",
+   "tags": [
+    "passenger",
+    "ride along",
+    "sits in the car",
+    "look out the window"
+   ],
+   "description": "seated passenger looking around",
+   "frames": 181,
+   "duration": 6.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.378,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "car_idle",
+   "cmu": "keyframed:vehicle:car:0",
+   "category": "idle",
+   "tags": [
+    "car parked"
+   ],
+   "description": "car idling",
+   "frames": 31,
+   "duration": 1.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.2,
+   "source": "keyframed",
+   "kind": "car",
+   "tier": 2
+  },
+  {
+   "id": "car_slow",
+   "cmu": "keyframed:vehicle:car:3",
+   "category": "locomotion",
+   "tags": [
+    "car drive"
+   ],
+   "description": "car driving at 3 m/s",
+   "frames": 31,
+   "duration": 1.0,
+   "end_disp": [
+    0.0,
+    3.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 3.0,
+   "height": 1.2,
+   "source": "keyframed",
+   "kind": "car",
+   "tier": 2
+  },
+  {
+   "id": "car_fast",
+   "cmu": "keyframed:vehicle:car:7",
+   "category": "locomotion",
+   "tags": [
+    "car drive"
+   ],
+   "description": "car driving at 7 m/s",
+   "frames": 31,
+   "duration": 1.0,
+   "end_disp": [
+    0.0,
+    7.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 7.0,
+   "height": 1.2,
+   "source": "keyframed",
+   "kind": "car",
+   "tier": 2
+  },
+  {
+   "id": "bike_idle",
+   "cmu": "keyframed:vehicle:bike:0",
+   "category": "idle",
+   "tags": [
+    "bike parked"
+   ],
+   "description": "bike idling",
+   "frames": 31,
+   "duration": 1.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 1.15,
+   "source": "keyframed",
+   "kind": "bike",
+   "tier": 2
+  },
+  {
+   "id": "bike_slow",
+   "cmu": "keyframed:vehicle:bike:3.5",
+   "category": "locomotion",
+   "tags": [
+    "bike drive"
+   ],
+   "description": "bike driving at 3.5 m/s",
+   "frames": 31,
+   "duration": 1.0,
+   "end_disp": [
+    0.0,
+    3.5
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 3.5,
+   "height": 1.15,
+   "source": "keyframed",
+   "kind": "bike",
+   "tier": 2
+  },
+  {
+   "id": "bike_fast",
+   "cmu": "keyframed:vehicle:bike:8",
+   "category": "locomotion",
+   "tags": [
+    "bike drive"
+   ],
+   "description": "bike driving at 8 m/s",
+   "frames": 31,
+   "duration": 1.0,
+   "end_disp": [
+    0.0,
+    8.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 8.0,
+   "height": 1.15,
+   "source": "keyframed",
+   "kind": "bike",
+   "tier": 2
+  },
+  {
+   "id": "down_groan_blast_back",
+   "cmu": "keyframed:down:blast_back:groan",
+   "category": "idle",
+   "tags": [
+    "down_groan_blast_back"
+   ],
+   "description": "groans on the ground after the blast",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.144,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
+  },
+  {
+   "id": "down_still_blast_back",
+   "cmu": "keyframed:down:blast_back:still",
+   "category": "idle",
+   "tags": [
+    "down_still_blast_back"
+   ],
+   "description": "lies still after the blast",
+   "frames": 121,
+   "duration": 4.0,
+   "end_disp": [
+    0.0,
+    0.0
+   ],
+   "end_yaw": 0.0,
+   "avg_speed": 0.0,
+   "height": 0.148,
+   "source": "keyframed",
+   "tier": 2,
+   "gaze": 1
   }
  ]
 }

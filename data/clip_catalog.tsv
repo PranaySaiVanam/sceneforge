@@ -1,74 +1,205 @@
-id	cmu	category	tags	description	trim
-idle_wait	141_20	idle	idle,wait,stand,stand still,standing,waiting,pause,neutral,stop,stops,halt,freeze,catch breath	stands in place waiting, shifting weight	
-idle_breathe	140_06	idle	idle,stand,breathe,rest,calm,neutral,still	relaxed idle stance	
-walk	143_32	locomotion	walk,walking,stroll,approach,go,move,step,forward,enter	normal walk forward	
-walk_back	143_39	locomotion	walk backwards,back away,retreat,backward,step back	walks backwards, backing away	
-walk_side	143_40	locomotion	walk sideways,sidestep,circle,strafe,side step	walks sideways, side-stepping	
-sneak	120_09	locomotion	sneak,sneaking,creep,tiptoe,stealth,stealthy,quiet,spy	sneaks forward stealthily	
-walk_sad	91_13	locomotion	sad walk,depressed,slow,tired,dejected,trudge,sorrow	slow sad walk with slumped posture	
-walk_happy	82_12	locomotion	happy walk,cheerful,bouncy,carefree,joyful,stroll	happy carefree bouncy walk	
-walk_zombie	104_41	locomotion	zombie,undead,shamble,monster,creepy,stagger	zombie shambling walk	
-walk_limp	77_19	locomotion	limp,limping,injured,hurt,wounded,hobble	limping on an injured right leg	
-walk_drunk	91_09	locomotion	drunk,stagger,stumble,wobble,dizzy	staggering drunk walk	
-pace	143_29	locomotion	pace,pacing,nervous,anxious,worried,thinking	pacing back and forth	
-run	143_01	locomotion	run,running,sprint,dash,rush,charge,flee,chase,hurry	running fast	
-run_stop	143_02	locomotion	run then brake,skid,arrive running,run to a standstill	runs, then brakes to a standstill	
-run_start	143_03	locomotion	start to run,take off,burst,startled run,flee	starts from standing into a run	
-jump	143_05	action	jump,leap,jumping,bound,long jump	jumps forward for distance	
-jump_twist	143_08	action	jump twist,spin jump,twist,celebrate,cheer,victory jump	jumps with a twist in the air	
-hop	143_31	action	hop,hopscotch,skip,playful,child,game	hopscotch hopping	
-punch	143_23	combat	punch,punching,strike,hit,attack,jab,lunge,fight,fist	throws punches	
-kick	143_24	combat	kick,kicking,strike,attack,fight,front kick	kicks	
-punch_kick	141_14	combat	punch and kick,combo,fight,brawl,attack,martial arts	punch and kick combination	
-boxing	13_17	combat	boxing,boxer,guard,spar,sparring,fight,fists up,circle,duel	boxing stance, sparring and jabbing	
-sword	02_07	combat	sword,swordplay,fencing,duel,slash,blade,stab	swordplay attacks	
-spin_kick	88_06	combat	spin kick,jump kick,acrobatic,martial arts,roundhouse	jumping spin kick	
-fall_face	90_16	reaction	fall,falls,fall down,collapse,knocked down,trip,faint,die,defeated,dodge and fall	falls forward onto the face	1.9:
-fall_back	90_18	reaction	fall back,slip,rug pull,knocked back,fall over,blown back	feet pulled out, falls backwards	
-get_up	140_08	reaction	get up,stand up,rise,recover,get back up,from ground	gets up from lying on the back	0.6:
-cartwheel	144_01	acrobatic	cartwheel,acrobatic,gymnastics,tumble,flip,show off	cartwheels	
-backflip	88_01	acrobatic	backflip,flip,acrobatic,stunt,somersault	backflip	
-wave	143_25	social	wave,waving,hello,greet,goodbye,hi,signal,call	waves hello	
-high_five	141_22	social	high five,celebrate,team,congratulate,victory	gives a high five	
-handshake	141_23	social	shake hands,handshake,greet,meet,deal,agree,introduce	shakes hands	
-shrug	141_21	social	shrug,dunno,confused,unsure,whatever,indifferent	shrugs shoulders	
-curtsey	141_26	social	curtsey,bow,polite,respect,thank,greet formally	curtsey bow	
-mope	141_27	emotion	mope,sad,upset,sulk,disappointed,grief,despair	mopes sadly	
-laugh	13_14	emotion	laugh,laughing,happy,joke,amused,giggle	laughs	
-angry	18_10	emotion	angry,argue,quarrel,shout,furious,gesture,yell,frustrated	angry hand gestures, arguing	
-peekaboo	143_33	emotion	peek a boo,playful,hide,surprise,child	plays peek-a-boo	
-sit	143_18	pose	sit,sit down,seat,chair,rest,get up,sit and stand	sits down and gets back up	1.4:4.8
-sit_stool	141_17	pose	sit on stool,sit,perch,stool,bar,wait seated	sits on a stool	
-pick_up	143_11	work	pick up,lift,carry,box,grab,collect,take	walks over and picks up a box	1.6:
-throw	143_20	work	throw,toss,catch,pass,hurl,ball	catches and throws	
-push	81_06	work	push,shove,heavy,force,move object,press	pushes a heavy box	
-climb	143_37	work	climb,ladder,climb up,ascend,descend	climbs up and down a ladder	
-sweep	143_28	work	sweep,broom,clean,chore,janitor	sweeps with a push broom	
-stretch	143_30	work	stretch,yawn,wake up,tired,sleepy,warm up	stretches and yawns	
-salsa	60_01	dance	salsa,dance,dancing,party,latin,partner dance	salsa dancing	
-chicken_dance	143_34	dance	chicken dance,dance,silly,funny,party,celebrate	does the chicken dance	
-ballet	05_02	dance	ballet,pirouette,graceful,elegant,dance,spin	expressive ballet with a pirouette	
-crawl	111_03	pose	crawl,crawling,hands and knees,baby,creep low,wounded crawl	crawls on hands and knees	1.4:
-duck	139_09	reaction	duck,dodge,evade,avoid,crouch,cover,flinch	ducks to dodge	1.3:4.4
-flashlight	77_05	action	look around,search,flashlight,investigate,scan,explore,examine	looks around searching with a flashlight	
-drink	80_40	action	drink,drinking,bottle,thirsty,sip	drinks from a bottle	
-eat_dinner	79_12	daily	eat,eats,eating,dinner,lunch,meal,plate,fork,knife,dine,food,breakfast	eats a meal from a plate with a fork and knife	
-eat_soup	79_42	daily	soup,bowl,spoon,eat soup,slurp,broth	eats soup from a bowl with a spoon	
-eat_sandwich	79_15	daily	sandwich,burger,bite,snack,eat with hands,roti,dosa,pizza	eats a sandwich with both hands	
-chop	79_10	daily	chop,chopping,cut,cutting,onion,vegetables,knife,dice,cook,prep	chops onions on a cutting board	
-slice	79_09	daily	slice,slicing,bread,loaf,cut bread,carve	slices a loaf of bread	
-mix	79_13	daily	mix,mixing,stir,stirring,whisk,batter,bowl,cook,cooking,beat eggs	mixes batter in a bowl	
-knead	79_14	daily	knead,kneading,dough,bake,baking,roll,flour,chapati	kneads and works dough	
-make_coffee	80_31	daily	make coffee,brew,coffee,tea,kettle,pour,prepare drink,cook	makes a cup of coffee	
-sip_coffee	79_41	daily	sip,coffee,tea,cup,mug,chai,hot drink	sips coffee from a cup	
-set_glass	80_27	daily	set the table,place,glass,put down,serve,lay the table	sets a glass of water down on the table	
-eat_casual	80_24	daily	eat,eating,munch,chew,snack,food	eats casually	
-carve	80_32	daily	slice,slicing,carve,carving,meat,cut,cook	slices food with a knife	
-phone_call	79_36	daily	phone,call,answer the phone,ring,talk on phone,mobile	answers the phone	
-typing	79_85	daily	type,typing,laptop,computer,work,keyboard,email	types on a laptop	
-brush_teeth	79_81	daily	brush teeth,toothbrush,morning routine,bathroom	brushes teeth	
-jumping_jacks	22_16	exercise	jumping jacks,star jumps,workout,exercise,warm up,cardio,pt	does jumping jacks	
-squats	22_14	exercise	squat,squats,workout,exercise,leg day,deep knee bend,sit ups	does squats	
-weights	79_93	exercise	lift weights,weight lifting,dumbbell,barbell,gym,lift,curl,bench	lifts weights	
-warm_up	77_21	exercise	stretch,stretching,warm up,cool down,limber up,exercise	stretches to warm up	
-pushups	keyframed:pushups	exercise	pushup,pushups,push up,push ups,press up,press ups,push-ups,workout,exercise,gym,drop and give me	gets down and does five pushups, then stands up	
+id	cmu	category	tags	description	trim	extra
+idle_wait	141_20	idle	idle,wait,stand,stand still,standing,waiting,pause,neutral,stop,stops,halt,freeze,catch breath	stands in place waiting, shifting weight		
+idle_breathe	140_06	idle	idle,stand,breathe,rest,calm,neutral,still	relaxed idle stance		
+walk	143_32	locomotion	walk,walking,stroll,approach,go,move,step,forward,enter	normal walk forward		
+walk_back	143_39	locomotion	walk backwards,back away,retreat,backward,step back	walks backwards, backing away		
+walk_side	143_40	locomotion	walk sideways,sidestep,circle,strafe,side step	walks sideways, side-stepping		
+sneak	120_09	locomotion	sneak,sneaking,creep,tiptoe,stealth,stealthy,quiet,spy	sneaks forward stealthily		
+walk_sad	91_13	locomotion	sad walk,depressed,slow,tired,dejected,trudge,sorrow	slow sad walk with slumped posture		
+walk_happy	82_12	locomotion	happy walk,cheerful,bouncy,carefree,joyful,stroll	happy carefree bouncy walk		
+walk_zombie	104_41	locomotion	zombie,undead,shamble,monster,creepy,stagger	zombie shambling walk		
+walk_limp	77_19	locomotion	limp,limping,injured,hurt,wounded,hobble	limping on an injured right leg		
+walk_drunk	91_09	locomotion	drunk,stagger,stumble,wobble,dizzy	staggering drunk walk		
+pace	143_29	locomotion	pace,pacing,nervous,anxious,worried,thinking	pacing back and forth		
+run	143_01	locomotion	run,running,sprint,dash,rush,charge,flee,chase,hurry	running fast		
+run_stop	143_02	locomotion	run then brake,skid,arrive running,run to a standstill	runs, then brakes to a standstill		
+run_start	143_03	locomotion	start to run,take off,burst,startled run,flee	starts from standing into a run		
+jump	143_05	action	jump,leap,jumping,bound,long jump	jumps forward for distance		
+jump_twist	143_08	action	jump twist,spin jump,twist,celebrate,cheer,victory jump	jumps with a twist in the air		
+hop	143_31	action	hop,hopscotch,skip,playful,child,game	hopscotch hopping		
+punch	143_23	combat	punch,punching,strike,hit,attack,jab,lunge,fight,fist	throws punches		
+kick	143_24	combat	kick,kicking,strike,attack,fight,front kick	kicks		
+punch_kick	141_14	combat	punch and kick,combo,fight,brawl,attack,martial arts	punch and kick combination		
+boxing	13_17	combat	boxing,boxer,guard,spar,sparring,fight,fists up,circle,duel	boxing stance, sparring and jabbing		
+sword	02_07	combat	sword,swordplay,fencing,duel,slash,blade,stab	swordplay attacks		
+spin_kick	88_06	combat	spin kick,jump kick,acrobatic,martial arts,roundhouse	jumping spin kick		
+fall_face	90_16	reaction	fall,falls,fall down,collapse,knocked down,trip,faint,die,defeated,dodge and fall	falls forward onto the face	1.9:	
+fall_back	90_18	reaction	fall back,slip,rug pull,knocked back,fall over,blown back	feet pulled out, falls backwards		
+get_up	140_08	reaction	get up,stand up,rise,recover,get back up,from ground	gets up from lying on the back	0.6:	
+cartwheel	144_01	acrobatic	cartwheel,acrobatic,gymnastics,tumble,flip,show off	cartwheels		
+backflip	88_01	acrobatic	backflip,flip,acrobatic,stunt,somersault	backflip		
+wave	143_25	social	wave,waving,hello,greet,goodbye,hi,signal,call	waves hello		
+high_five	141_22	social	high five,celebrate,team,congratulate,victory	gives a high five		
+handshake	141_23	social	shake hands,handshake,greet,meet,deal,agree,introduce	shakes hands		
+shrug	141_21	social	shrug,dunno,confused,unsure,whatever,indifferent	shrugs shoulders		
+curtsey	141_26	social	curtsey,bow,polite,respect,thank,greet formally	curtsey bow		
+mope	141_27	emotion	mope,sad,upset,sulk,disappointed,grief,despair	mopes sadly		
+laugh	13_14	emotion	laugh,laughing,happy,joke,amused,giggle	laughs		
+angry	18_10	emotion	angry,argue,quarrel,shout,furious,gesture,yell,frustrated	angry hand gestures, arguing		
+peekaboo	143_33	emotion	peek a boo,playful,hide,surprise,child	plays peek-a-boo		
+sit	143_18	pose	sit,sit down,seat,chair,rest,get up,sit and stand	sits down and gets back up	1.4:4.8	
+sit_stool	141_17	pose	sit on stool,sit,perch,stool,bar,wait seated	sits on a stool		
+pick_up	143_11	work	pick up,lift,carry,box,grab,collect,take	walks over and picks up a box	1.6:	
+throw	143_20	work	throw,toss,catch,pass,hurl,ball	catches and throws		
+push	81_06	work	push,shove,heavy,force,move object,press	pushes a heavy box		
+climb	143_37	work	climb,ladder,climb up,ascend,descend	climbs up and down a ladder		
+sweep	143_28	work	sweep,broom,clean,chore,janitor	sweeps with a push broom		
+stretch	143_30	work	stretch,yawn,wake up,tired,sleepy,warm up	stretches and yawns		
+salsa	60_01	dance	salsa,dance,dancing,party,latin,partner dance	salsa dancing		
+chicken_dance	143_34	dance	chicken dance,dance,silly,funny,party,celebrate	does the chicken dance		
+ballet	05_02	dance	ballet,pirouette,graceful,elegant,dance,spin	expressive ballet with a pirouette		
+crawl	111_03	pose	crawl,crawling,hands and knees,baby,creep low,wounded crawl	crawls on hands and knees	1.4:	
+duck	139_09	reaction	duck,dodge,evade,avoid,crouch,cover,flinch	ducks to dodge	1.3:4.4	
+flashlight	77_05	action	look around,search,flashlight,investigate,scan,explore,examine	looks around searching with a flashlight		
+drink	80_40	action	drink,drinking,bottle,thirsty,sip	drinks from a bottle		
+eat_dinner	79_12	daily	eat,eats,eating,dinner,lunch,meal,plate,fork,knife,dine,food,breakfast	eats a meal from a plate with a fork and knife		
+eat_soup	79_42	daily	soup,bowl,spoon,eat soup,slurp,broth	eats soup from a bowl with a spoon		
+eat_sandwich	79_15	daily	sandwich,burger,bite,snack,eat with hands,roti,dosa,pizza	eats a sandwich with both hands		
+chop	79_10	daily	chop,chopping,cut,cutting,onion,vegetables,knife,dice,cook,prep	chops onions on a cutting board		
+slice	79_09	daily	slice,slicing,bread,loaf,cut bread,carve	slices a loaf of bread		
+mix	79_13	daily	mix,mixing,stir,stirring,whisk,batter,bowl,cook,cooking,beat eggs	mixes batter in a bowl		
+knead	79_14	daily	knead,kneading,dough,bake,baking,roll,flour,chapati	kneads and works dough		
+make_coffee	80_31	daily	make coffee,brew,coffee,tea,kettle,pour,prepare drink,cook	makes a cup of coffee		
+sip_coffee	79_41	daily	sip,coffee,tea,cup,mug,chai,hot drink	sips coffee from a cup		
+set_glass	80_27	daily	set the table,place,glass,put down,serve,lay the table	sets a glass of water down on the table		
+eat_casual	80_24	daily	eat,eating,munch,chew,snack,food	eats casually		
+carve	80_32	daily	slice,slicing,carve,carving,meat,cut,cook	slices food with a knife		
+phone_call	79_36	daily	phone,call,answer the phone,ring,talk on phone,mobile	answers the phone		
+typing	79_85	daily	type,typing,laptop,computer,work,keyboard,email	types on a laptop		
+brush_teeth	79_81	daily	brush teeth,toothbrush,morning routine,bathroom	brushes teeth		
+jumping_jacks	22_16	exercise	jumping jacks,star jumps,workout,exercise,warm up,cardio,pt	does jumping jacks		
+squats	22_14	exercise	squat,squats,workout,exercise,leg day,deep knee bend,sit ups	does squats		
+weights	79_93	exercise	lift weights,weight lifting,dumbbell,barbell,gym,lift,curl,bench	lifts weights		
+warm_up	77_21	exercise	stretch,stretching,warm up,cool down,limber up,exercise	stretches to warm up		
+pushups	keyframed:pushups	exercise	pushup,pushups,push up,push ups,press up,press ups,push-ups,workout,exercise,gym,drop and give me	gets down and does five pushups, then stands up		
+walk_angry	104_28	locomotion	angry walk,walks angrily,angrily,stern,stomp,stomps,storm,storms off,furious walk,aggressive walk,determined	walks with a stern, angry stride		tier=2
+walk_proud	104_44	locomotion	proud walk,confident,strut,swagger,attitude,cool walk,boss	walks with a confident strut		tier=2
+walk_quick	91_17	locomotion	quick walk,brisk,hurry,fast walk,jog,rush,medium speed	walks quickly		tier=2
+walk_scared	91_32	locomotion	scared walk,nervous walk,afraid,timid,fearful,cautious	walks nervously, scared		tier=2
+walk_old	137_33	locomotion	old man walk,elderly,old,frail,shuffle,slow walk	shuffles like an old man		tier=2
+walk_heavy	137_42	locomotion	strong man walk,heavy walk,macho,muscular,bulky,brute	walks like a heavy strong man		tier=2
+walk_crouch	136_09	locomotion	crouch walk,crouched,crouching,low walk,stealth,cover,move crouched,crouch	walks crouched low		tier=2
+walk_crouch_back	136_11	locomotion	crouch backwards,crouched retreat,back away crouched	walks backwards while crouched		tier=2
+sneak_side	139_14	locomotion	sneak sideways,side shuffle,strafe,edge along,sidle	sneaks sideways		tier=2
+march	138_01	locomotion	march,marching,soldier,military,parade,drill	marches like a soldier		tier=2
+zombie_lurch	120_22	locomotion	zombie,undead,lurch,ghoul,horde	lurches like a zombie		tier=2
+carry_walk	111_36	locomotion	carry,carrying,walk and carry,haul,transport,luggage,box,bag	walks carrying something in both arms		prop=box tier=2
+karate_punch	135_09	combat	lunge punch,straight punch,karate punch,reverse punch,martial arts,strike,attack	steps in with a karate lunge punch	1.2:3.2 abs align=0.5	strike=1 tier=2
+front_kick	135_04	combat	front kick,snap kick,kick,push kick,martial arts	throws a front kick	1.9:3.6 abs align=0.5	strike=1 tier=2
+roundhouse	135_07	combat	roundhouse,roundhouse kick,mawashi geri,turning kick,high kick	throws a roundhouse kick	2.5:4.5 abs align=0.5	strike=1 tier=2
+side_kick	135_11	combat	side kick,yoko geri,sidekick,kick	throws a side kick	1.8:3.6 abs align=0.5	strike=1 tier=2
+block_low	135_05	combat	low block,gedan barai,parry low,block	sweeps a low karate block	0.2:2.0 abs align=0.5	tier=2
+block_hand	135_10	combat	knife hand block,shuto uke,parry,block,deflect	deflects with a knife-hand block	1.0:2.8 abs align=0.5	tier=2
+guard	76_04	combat	guard,defensive stance,defend,fighting stance,ready pose,on guard	holds a defensive guard		tier=2
+evade	76_03	reaction	evade,avoid,dodge,sidestep,slip,weave,escape the attack	evades an attacker	3.2:5.2 abs	tier=2
+shoot_gun	79_96	combat	shoot,shoots,fire,gun,pistol,handgun,aim and fire,gunshot	aims and shoots a handgun		weapon=gun tier=2
+shoot_rifle	80_03	combat	rifle,shoot rifle,long gun,shotgun,aim,fire	aims and fires a long gun		weapon=rifle tier=2
+draw_weapon	139_05	action	draw,draws,draw weapon,draws a gun,draws his gun,draws his sword,draw the sword,pull a gun,equip,equips,unholster,arm himself,take out weapon	draws a weapon from the hip		tier=2
+holster	139_05	action	holster,holsters,holster gun,holsters his gun,holsters the gun,unequip,unequips,put away weapon,puts the gun away,sheathe,sheathes the sword,lower weapon	puts the weapon away	rev	tier=2
+shoot_bow	79_86	combat	bow,arrow,archer,archery,shoot an arrow,draw the bow,longbow	draws a bow and shoots an arrow		weapon=bow tier=2
+mace_smash	79_01	combat	mace,gadha,gada,club,hammer,overhead smash,axe,chop,two handed strike,finisher	swings a heavy two-handed overhead smash		weapon=mace strike=1 tier=2
+sword_duel	02_08	combat	swordsman,second blade routine,slash,stab,blade combo	a second swordplay routine with slashes and stabs		weapon=sword strike=1 tier=2
+lie_down	111_12	pose	lie down,lay down,lie on back,rest on ground,collapse slowly,sleep	lies down on the ground	0.5:9.6 abs	tier=2
+get_up_prone	140_01	reaction	get up from prone,get up face down,rise from the floor,push up from ground	gets up from lying face down		tier=2
+prone	140_01	pose	prone,go prone,goes prone,going prone,lie face down,lies face down,belly,drop prone,drops prone,take cover on the ground	lies down face down on the ground	rev	tier=2
+kneel	23_03	pose	kneel,kneeling,kneels,on one knee,comfort,console	kneels down to comfort someone	0.0:4.2 abs	tier=2
+cower	79_73	emotion	cower,scared,afraid,terrified,shrink,flinch,fear,tremble	cowers in fear		tier=2
+cower_low	142_16	emotion	cower low,crouch in fear,hide,shrink down,panic	crouches down, scared	33.0:35.5 abs	tier=2
+cheer	79_69	emotion	cheer,cheers,cheering,exclaim,exclaims,hooray,very happy,overjoyed,yay,rejoice,whoop	cheers, overjoyed		tier=2
+argue	80_48	emotion	argue,argues,arguing,argument,gesticulate,gesticulates,dispute,debate,complain,rant,bicker	argues with big gestures		tier=2
+point	139_25	social	point,give directions,show the way,indicate,gesture toward,over there	points and gives directions		tier=2
+stumble	104_13	reaction	stumble,stagger,trip,lose balance,wobble	stumbles forward, losing balance		tier=2
+look_around	139_01	action	look around,scan,search,survey,watch,lookout	looks around carefully		tier=2
+sit_chair	114_05	pose	sit on chair,seated,sit in chair,sitting,take a seat	sits in a chair	2.0:8.0 abs	prop=chair tier=2
+stand_up	111_09	pose	stand up,stands up,standing up,get up from chair,gets up from the chair,rise,get to feet,stand,stands	gets up from a chair	2.0:5.0 abs	prop=chair tier=2
+pick_carry_place	69_70	work	pick up and set down,move object,transfer,relocate,carry and place,load,unload	squats, picks up an object, carries it and sets it down	1.2:8.3 abs	prop=box tier=2
+lift_heavy	137_40	work	lift heavy,heavy lift,luggage,suitcase,deadlift,heave,weight,strong man	lifts something heavy off the floor	7.5:12.5 abs	prop=box tier=2
+ride	111_15	pose	ride,riding,horseback,mounted,on horseback,ride a horse	sits astride, riding		tier=2
+sit_down	111_09	pose	sit down,take a seat,sit on a chair,be seated,sits	sits down on a chair	2.0:5.0 abs rev	prop=chair tier=2
+hit_react	keyframed:hit_react	reaction	hit reaction,get hit,is hit,take a hit,struck,recoil,react to hit,punched in the face,flinch back,gets hit	recoils from a blow to the head and steps back		tier=2
+hit_gut	keyframed:hit_gut	reaction	hit in the stomach,gut punch,doubled over,winded,body blow,gets punched in the gut	doubles over from a blow to the stomach		tier=2
+block	keyframed:block	combat	block,blocks,blocking,blocked,block the punch,blocks the punch,block the blow,blocks the blow,block the attack,guard up,cover up,parry the blow,shield face,defend against	raises both forearms to block a blow		tier=2
+nod	keyframed:nod	idle	nod,nods,listen,listening,agree,acknowledge,yes,attentive,engaged	listens and nods		tier=2
+crouch	keyframed:crouch	pose	crouch,crouches,crouching,squat down,get low,hunker down,take cover,takes cover,hide behind,duck down and wait	crouches low		tier=2
+push_button	keyframed:push_button	action	push button,press button,press the button,hit the switch,ring the bell,elevator,keypad,doorbell	reaches out and presses a button		prop=button tier=2
+open_door	keyframed:open_door	action	open door,opens the door,open the door,pull the door open,door handle,open	pulls a door open		prop=door tier=2
+salute	keyframed:salute	social	salute,salutes,military salute,respect,acknowledge commander	gives a salute		tier=2
+clap	keyframed:clap	social	clap,clapping,applaud,applause,cheer on	claps		tier=2
+point_at	keyframed:point_at	social	point at,points at,point,point ahead,indicate,accuse,show	points straight ahead		tier=2
+dog_idle	keyframed:quadruped:dog:idle	idle	stand,wait,idle,stay,look around,sniff,guard	dog stands and looks around		kind=dog tier=2
+dog_walk	keyframed:quadruped:dog:walk:2	locomotion	walk,walks,trot,pad,approach,follow,move,go	dog walks		kind=dog tier=2
+dog_run	keyframed:quadruped:dog:gallop:3	locomotion	run,runs,sprint,chase,charge,race,dash,bound,flee,fast	dog runs at a gallop		kind=dog tier=2
+dog_sit	keyframed:quadruped:dog:sit	pose	sit,sits,sit down,wait,stay,beg	dog sits		kind=dog tier=2
+dog_attack	keyframed:dog_lunge	combat	attack,bite,lunge,snap,bark,growl,pounce,jump at,maul	dog lunges and snaps		kind=dog tier=2
+horse_idle	keyframed:quadruped:horse:idle	idle	stand,wait,idle,graze,rest,look around	horse stands and looks around		kind=horse tier=2
+horse_walk	keyframed:quadruped:horse:walk:2	locomotion	walk,walks,approach,move,go,amble,follow	horse walks		kind=horse tier=2
+horse_trot	keyframed:quadruped:horse:trot:3	locomotion	trot,trots,jog,canter,medium speed	horse trots		kind=horse tier=2
+horse_gallop	keyframed:quadruped:horse:gallop:4	locomotion	gallop,gallops,run,runs,charge,race,sprint,flee,fast	horse gallops		kind=horse tier=2
+set_down_heavy	137_40	work	set down,put down,place,lower the load,unload,stow	lowers something heavy and sets it down	7.5:12.5 abs rev	prop=box tier=2
+walk_side_r	143_40	locomotion	strafe right,sidestep right,side step right	walks sideways to the right, side-stepping	mirror	tier=2
+push_off	keyframed:run_start	action	burst into a run,take off running,push off,start running,sprint off	pushes off from a standstill into a run		tier=2
+brake	keyframed:brake	action	skid to a stop,brake,plant feet,stop running,halt,pull up	plants the feet and brakes out of a run		tier=2
+turn_l90	keyframed:turn:90	action	turn left,pivot left,quarter turn left	pivots 90 degrees to the left		tier=2
+turn_r90	keyframed:turn:-90	action	turn right,pivot right,quarter turn right	pivots 90 degrees to the right		tier=2
+turn_l135	keyframed:turn:135	action	turn_l135	pivots 135 degrees to the left		tier=2
+turn_r135	keyframed:turn:-135	action	turn_r135	pivots 135 degrees to the right		tier=2
+turn_180	keyframed:turn:180	action	turn around,about face,spin around,turn back,pivot around	pivots all the way around		tier=2
+bump	keyframed:bump	reaction	bump into,walk into a wall,collide,run into,bounce off	walks into something solid and recoils		tier=2
+startle	keyframed:startle	reaction	startle,startled,jump at a sound,spooked,hear a noise,flinch at a sound,jumpy	flinches at a sudden sound and turns to it		tier=2
+step_over	keyframed:step_over	action	step over,step over the curb,climb over a low,stride over,hop over an obstacle	steps carefully over a low curb		tier=2
+duck_under	keyframed:duck_under	action	stoop under,stoop beneath,low ceiling,low beam,low pipe	stoops beneath a low beam and comes up on the far side		tier=2
+squeeze	keyframed:squeeze	action	squeeze through,shuffle through a gap,narrow gap,slip through,edge through	squeezes sideways through a narrow gap		tier=2
+collapse	keyframed:collapse	reaction	faint,faints,pass out,passes out,swoon,collapse,collapses,crumple,keel over,drop dead,dies	knees buckle and the body folds to the floor		tier=2
+down_still_fall_back	keyframed:down:fall_back:still	idle	lie still,play dead,lying motionless,unconscious,out cold	lies still on the ground, breathing		tier=2
+down_groan_fall_back	keyframed:down:fall_back:groan	idle	groan on the ground,writhe,injured on the ground,moan,clutch stomach	groans on the ground, a knee drawn up		tier=2
+down_still_fall_face	keyframed:down:fall_face:still	idle	down_still_fall_face	lies still on the ground, breathing		tier=2
+down_groan_fall_face	keyframed:down:fall_face:groan	idle	down_groan_fall_face	groans on the ground, a knee drawn up		tier=2
+down_still_lie_down	keyframed:down:lie_down:still	idle	down_still_lie_down	lies still on the ground, breathing		tier=2
+down_groan_lie_down	keyframed:down:lie_down:groan	idle	down_groan_lie_down	groans on the ground, a knee drawn up		tier=2
+down_still_prone	keyframed:down:prone:still	idle	down_still_prone	lies still on the ground, breathing		tier=2
+down_groan_prone	keyframed:down:prone:groan	idle	down_groan_prone	groans on the ground, a knee drawn up		tier=2
+down_still_collapse	keyframed:down:collapse:still	idle	down_still_collapse	lies still on the ground, breathing		tier=2
+down_groan_collapse	keyframed:down:collapse:groan	idle	down_groan_collapse	groans on the ground, a knee drawn up		tier=2
+crawl_fall_face	keyframed:down:fall_face:crawl	locomotion	crawl_fall_face	crawls slowly forward on the belly		tier=2
+crawl_prone	keyframed:down:prone:crawl	locomotion	crawl,crawls,crawling,crawl slowly,drag yourself,army crawl	crawls slowly forward on the belly		tier=2
+idle_phone	keyframed:idle_phone	idle	check phone,looks at phone,texting,scroll phone,on the phone,phone	looks down at a phone, thumb scrolling		tier=2 gaze=1
+idle_watch	keyframed:idle_watch	idle	check watch,checks the time,look at watch,glance at watch,impatient wait	checks a wristwatch		tier=2 gaze=1
+idle_arms_crossed	keyframed:idle_arms_crossed	idle	arms crossed,cross arms,folds arms,crossed arms,lean back skeptical	stands with arms crossed, shifting weight		tier=2 gaze=1
+idle_shift	keyframed:idle_shift	idle	loiter,hang around,shift weight,wallflower,stand around,background idle	shifts weight from foot to foot and glances around		tier=2 gaze=1
+chat_a	keyframed:chat_a	social	chat,chatting,converse,small talk,talking,gossip	chats: talks with gestures, then listens and nods		tier=2 gaze=1
+chat_b	keyframed:chat_b	social	chat_b	chats: listens and nods, then talks with gestures		tier=2 gaze=1
+wipe_counter	keyframed:wipe_counter	work	wipe,wipe counter,wipes the counter,clean table,wipe down	wipes a counter in circles		tier=2 gaze=1 prop=counter
+type_laptop	keyframed:type_laptop	work	type,typing,laptop,computer,keyboard,work at desk,type on laptop	sits typing on a laptop		tier=2 gaze=1 prop=desk
+read_book	keyframed:read_book	daily	read,reads,reading,read a book,book,novel	reads a book, turning a page		tier=2 gaze=1 prop=book
+sing	keyframed:sing	social	sing,sings,singing,singer,song,serenade,perform a song,karaoke	sings with a hand on the heart and the other sweeping out		tier=2 gaze=1
+think	keyframed:think	emotion	think,thinks,thinking,ponder,rub chin,consider,contemplate,tap foot,puzzled	thinks: rubs the chin, taps a foot		tier=2 gaze=1
+pace_circle	keyframed:pace_circle	locomotion	pace in a circle,walk in a small circle,circle pacing	paces a small circle while thinking		tier=2 gaze=1
+flinch_shield	keyframed:flinch_shield	reaction	shield face,cover face,flinch from explosion,brace,shield,cower from blast	throws the arms up to shield the face		tier=2 gaze=1
+exhausted	keyframed:exhausted	emotion	exhausted,catch breath,hands on knees,out of breath,winded,panting,tired out	bent over, hands on knees, chest heaving		tier=2 gaze=1
+wipe_sweat	keyframed:wipe_sweat	emotion	wipe sweat,wipes forehead,mop brow,hot,sweaty	wipes sweat from the forehead		tier=2 gaze=1
+wake_up	keyframed:wake_up	pose	wake up,wakes up,come to,comes to,recover,regain consciousness,groggy,get up slowly	comes round on the floor and gets up groggily		tier=2 gaze=1
+tpose	keyframed:calib_pose:t	pose	t-pose,t pose,tpose,calibration,calibrate,reset pose	calibration T-pose		tier=2 gaze=1
+apose	keyframed:calib_pose:a	pose	a-pose,a pose,apose,bind pose,neutral pose	calibration A-pose		tier=2 gaze=1
+standin_turn	keyframed:standin_turn	idle	stand-in,stand in,lighting check,turntable,silhouette	stand-in turning slowly for a lighting check		tier=2 gaze=1
+scale_ref	keyframed:scale_ref	pose	scale reference,height reference,for scale,arms out,measure	rigid stance with arms out as a scale reference		tier=2 gaze=1
+eyeline_sweep	keyframed:eyeline_sweep	pose	eyeline,eye-line,eye line calibration,sightline,line of sight	mechanical head pan to calibrate the eye-line		tier=2 gaze=1
+settle	keyframed:settle	action	settle	feet re-plant into a square stance		tier=2 gaze=1
+wind_down	keyframed:wind_down	action	wind down,catch my breath,breathing settles,recover breath	breathing slows back to normal		tier=2 gaze=1
+stagger_back	keyframed:stagger:back	reaction	stagger,staggers,pushed,shoved,knocked off balance,regain balance	is shoved and staggers back, catching their balance		tier=2 gaze=1
+stagger_forward	keyframed:stagger:forward	reaction	stagger_forward	is shoved and staggers forward, catching their balance		tier=2 gaze=1
+stagger_left	keyframed:stagger:left	reaction	stagger_left	is shoved and staggers left, catching their balance		tier=2 gaze=1
+stagger_right	keyframed:stagger:right	reaction	stagger_right	is shoved and staggers right, catching their balance		tier=2 gaze=1
+leap_roll	keyframed:leap_roll	acrobatic	leap of faith,dive roll,diving roll,leap and roll,dive forward	running dive into a forward roll		tier=2 gaze=1
+high_fall	keyframed:high_fall	acrobatic	high fall,fall from height,drop from a roof,jump down,stunt fall	falls in from height, lands hard and rolls		tier=2 gaze=1
+blast_back	keyframed:blast_back	reaction	blast,blown back,blown away,explosion,shockwave,thrown back	flung backwards by a blast		tier=2 gaze=1
+eject_roll	keyframed:eject_roll	acrobatic	jump out of the car,bail out,eject,dive out	bails out of a moving vehicle and rolls		tier=2 gaze=1
+drive_steer	keyframed:drive_steer	idle	drive,drives,driving,steer,behind the wheel	seated driver at the wheel		tier=2 gaze=1
+passenger_idle	keyframed:passenger_idle	idle	passenger,ride along,sits in the car,look out the window	seated passenger looking around		tier=2 gaze=1
+car_idle	keyframed:vehicle:car:0	idle	car parked	car idling		tier=2 kind=car
+car_slow	keyframed:vehicle:car:3	locomotion	car drive	car driving at 3 m/s		tier=2 kind=car
+car_fast	keyframed:vehicle:car:7	locomotion	car drive	car driving at 7 m/s		tier=2 kind=car
+bike_idle	keyframed:vehicle:bike:0	idle	bike parked	bike idling		tier=2 kind=bike
+bike_slow	keyframed:vehicle:bike:3.5	locomotion	bike drive	bike driving at 3.5 m/s		tier=2 kind=bike
+bike_fast	keyframed:vehicle:bike:8	locomotion	bike drive	bike driving at 8 m/s		tier=2 kind=bike
+down_groan_blast_back	keyframed:down:blast_back:groan	idle	down_groan_blast_back	groans on the ground after the blast		tier=2 gaze=1
+down_still_blast_back	keyframed:down:blast_back:still	idle	down_still_blast_back	lies still after the blast		tier=2 gaze=1

@@ -161,7 +161,7 @@ select.mini:hover { border-color: var(--line); }
 .empty { position: absolute; inset: 0; display: grid; place-items: center; color: var(--ink-3); background: var(--bg); }
 
 .transport {
-  display: flex; align-items: center; gap: 14px; padding: 8px 14px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 8px 14px;
   background: var(--surface); border-top: 1px solid var(--line-soft);
 }
 .group { display: flex; gap: 4px; }
@@ -169,10 +169,10 @@ select.mini:hover { border-color: var(--line); }
 .icon-btn.play { background: var(--surface-3); color: var(--ink); }
 .icon-btn.play:hover { background: var(--line); }
 .seg { display: inline-flex; padding: 3px; gap: 2px; background: var(--bg); border: 1px solid var(--line-soft); border-radius: var(--r-s); }
-.seg button { height: 28px; padding: 0 12px; border-radius: 4px; color: var(--ink-3); font-size: 12.5px; }
+.seg button { height: 28px; padding: 0 12px; white-space: nowrap; border-radius: 4px; color: var(--ink-3); font-size: 12.5px; }
 .seg button:hover { color: var(--ink-2); }
 .seg button.on { background: var(--surface-3); color: var(--ink); }
-.switch { display: inline-flex; align-items: center; gap: 8px; color: var(--ink-2); font-size: 12.5px; cursor: pointer; }
+.switch { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; color: var(--ink-2); font-size: 12.5px; cursor: pointer; }
 .switch input { position: absolute; opacity: 0; width: 1px; height: 1px; }
 .switch span { width: 28px; height: 16px; border-radius: 999px; background: var(--surface-3); position: relative; transition: background .15s; }
 .switch span::after { content: ""; position: absolute; left: 2px; top: 2px; width: 12px; height: 12px; border-radius: 50%; background: var(--ink-2); transition: transform .15s, background .15s; }
@@ -180,6 +180,7 @@ select.mini:hover { border-color: var(--line); }
 .switch input:checked + span::after { transform: translateX(12px); background: var(--accent); }
 .switch input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
 .spacer { flex: 1; }
+#record { white-space: nowrap; }
 .ghost {
   height: 34px; padding: 0 12px; border-radius: var(--r-s);
   display: inline-flex; align-items: center; gap: 8px;
@@ -193,6 +194,7 @@ select.mini:hover { border-color: var(--line); }
 .timeline {
   position: relative; background: var(--surface); border-top: 1px solid var(--line-soft);
   padding: 8px 16px 12px 108px; user-select: none; cursor: col-resize; min-height: 124px;
+  max-height: 230px; overflow-y: auto;
 }
 .tl-ruler { position: relative; height: 18px; color: var(--ink-3); font-size: 11px; font-variant-numeric: tabular-nums; }
 .tl-ruler span { position: absolute; top: 0; transform: translateX(-50%); }
@@ -275,3 +277,17 @@ pre { margin: 0; padding: 12px; border-radius: var(--r-s); background: var(--bg)
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 .step-note { margin: -8px 0 14px; font-size: 12px; color: var(--ink-3); }
+
+.hud-say {
+  position: absolute; left: 50%; bottom: 48px; transform: translateX(-50%); max-width: 80%;
+  padding: 6px 14px; border-radius: 8px; background: rgba(15, 20, 25, .72); backdrop-filter: blur(6px);
+  color: #fff; font-size: 15px; line-height: 1.45; text-align: center;
+}
+.hud-say span { font-weight: 700; margin-right: 6px; }
+.syntax { border: 1px solid var(--line-soft); border-radius: var(--r-m); background: var(--surface-2); }
+.syntax summary { cursor: pointer; padding: 10px 12px; font-size: 12.5px; font-weight: 600; color: var(--ink-2); }
+.syntax[open] summary { border-bottom: 1px solid var(--line-soft); }
+.syntax p, .syntax dl { margin: 10px 12px; font-size: 12px; color: var(--ink-2); }
+.syntax dt { font-weight: 650; color: var(--ink); margin-top: 8px; }
+.syntax dd { margin: 2px 0 0; }
+.syntax code { font-size: 11.5px; background: var(--bg); padding: 1px 4px; border-radius: 3px; color: var(--ink); word-break: break-word; }

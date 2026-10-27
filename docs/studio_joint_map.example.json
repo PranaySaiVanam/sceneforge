@@ -1,0 +1,7 @@
+{
+  "_comment": "Optional: only needed when automatic mapping guesses wrong. Keys are SceneForge joints, values are the joint names in your BVH. Pass with --map.",
+  "Spine": "Character1_Spine1",
+  "Spine1": "Character1_Spine2",
+  "Neck1": "Character1_Neck",
+  "Head": "Character1_Head"
+}
